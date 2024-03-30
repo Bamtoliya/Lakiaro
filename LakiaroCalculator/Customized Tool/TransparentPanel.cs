@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LakiaroCalculator
+namespace LakiaroCalculator.Customized_Tool
 {
-    internal static class Cell
+    public class TransparentPanel : TableLayoutPanel
     {
-
-    }
-
-    internal class Cell_button : Button
-    {
-
+        
     }
 }

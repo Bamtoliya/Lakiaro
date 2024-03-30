@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-
 namespace LakiaroCalculator
 {
     
     public partial class Form1 : Form
     {
         public bool mouseIsDown = false;
-        Button[] possibleStart = new Button[16];
+
+        public Stack<CellButton> log = new Stack<CellButton>();
 
         public Form1()
         {
@@ -30,11 +30,6 @@ namespace LakiaroCalculator
         }
 
         private void Calculate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Change()
         {
 
         }
@@ -54,16 +49,19 @@ namespace LakiaroCalculator
 
         }
 
-        private void Cell_Button_Clicked(object sender, EventArgs e)
+        private void Cell_Button_Clicked(object sender, MouseEventArgs e)
         {
-            //When Cell button clicked, call list of the possible tiles
-            
-            //Toggle On and Off the Button
-
             if (TilesPanel.Visible == false)
             {
+                CellButton tempButton = (CellButton)sender;
+                
+                Point Location = new Point((((Button)sender).Parent.Location.X + ((Button)sender).Width + 10), ((Button)sender).Height);
+
+                TilesPanel.BringToFront();
+                TilesPanel.Location = Location;
                 TilesPanel.Show();
-                TilesPanel.Location = ((Button)sender).Location;
+
+                log.Push(tempButton);
             }
             else
             {
@@ -71,7 +69,20 @@ namespace LakiaroCalculator
             }
         }
 
-        
+        private void TileButtonClicked(object sender, EventArgs e) 
+        {
+            Button TileButton = (Button)sender;
+            log.First().Image = TileButton.Image;
+            log.Clear();
+            TilesPanel.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
         // Detail fo Later
         /**
         private void Cell_Button_MouseDown(object sender, MouseEventArgs e)
@@ -103,15 +114,5 @@ namespace LakiaroCalculator
             Pen pen = new Pen(color);
             g.DrawRectangle(pen, x, y, 3, 3);
         }**/
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_MouseDown(object sender, MouseEventArgs e)
-        {
-
-        }
     }
 }

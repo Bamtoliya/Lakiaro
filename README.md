@@ -26,7 +26,7 @@ Center 4 * 4
 1. Minimum 6 
 2. Maximum 9
 3. Decreasing at 5
-4. Starting point are 16 points edge of the center
+4. Starting point are 16 points; edges of the center
 5. 
 
 It's like Maze
@@ -78,12 +78,20 @@ Click the cell and
     3. Rock
         1. Unluck
 3. Find 5th root(DESC)
-    1. 
+    1. Check Possible starting and 8th root
 4. Find 8th root
     1. 
+
 
 
 ## Wild Root Condition
 1. Minimum 7
 2. Maximum 13
 3. Decreasing at 7
+
+
+
+### Problems
+1. Get Location of Button inside the panel to show other panel
+2. make transparent panel background
+3. 
