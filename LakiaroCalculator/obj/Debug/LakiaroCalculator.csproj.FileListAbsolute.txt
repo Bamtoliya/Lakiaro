@@ -1,0 +1,10 @@
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\bin\Debug\LakiaroCalculator.exe.config
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\bin\Debug\LakiaroCalculator.exe
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\bin\Debug\LakiaroCalculator.pdb
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.csproj.AssemblyReference.cache
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.Form1.resources
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.Properties.Resources.resources
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.csproj.GenerateResource.cache
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.csproj.CoreCompileInputs.cache
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.exe
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.pdb
