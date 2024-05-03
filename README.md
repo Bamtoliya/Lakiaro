@@ -37,6 +37,12 @@ Click the cell and
 
 ##  Types of tile
 
+North
+South
+East
+West
+
+
 1. Rock
 2. Dirt
 3. Root(BASE)
@@ -82,16 +88,15 @@ Click the cell and
 4. Find 8th root
     1. 
 
-
-
 ## Wild Root Condition
 1. Minimum 7
 2. Maximum 13
 3. Decreasing at 7
 
-
-
 ### Problems
-1. Get Location of Button inside the panel to show other panel
+1. Get Location of Button inside the panel to show other panel - Solved
 2. make transparent panel background
-3. 
+3. To handle multiple mouse input from one button have to use Mousedown event instead of MouseClick Event
+4. How can process the sequence direction of narrowing roots
+5. How can I get CellButton's Row and Column number in TableLayouPanel
+6. 

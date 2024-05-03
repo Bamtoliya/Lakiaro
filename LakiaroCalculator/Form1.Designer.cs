@@ -34,36 +34,39 @@ namespace LakiaroCalculator
             this.Reset = new System.Windows.Forms.Button();
             this.Calculate = new System.Windows.Forms.Button();
             this.TilesPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button154 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.toggleButton1 = new LakiaroCalculator.ToggleButton.ToggleButton();
-            this.button155 = new System.Windows.Forms.Button();
-            this.button156 = new System.Windows.Forms.Button();
-            this.button157 = new System.Windows.Forms.Button();
-            this.button158 = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.cell_button1 = new LakiaroCalculator.CellButton();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.GridPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.RootsPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.DirectionPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.DirtInput = new System.Windows.Forms.NumericUpDown();
+            this.RootsInput = new System.Windows.Forms.NumericUpDown();
+            this.RockInput = new System.Windows.Forms.NumericUpDown();
+            this.PossibleRoots = new System.Windows.Forms.Label();
+            this.ThickButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.NarrowButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.ThinButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.DirtButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.RockButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.QuestionButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.cell_button1 = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.WestButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.EndButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.NorthButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.EastButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.SouthButton = new LakiaroCalculator.Customized_Tool.CellButton();
+            this.toggleButton1 = new LakiaroCalculator.Customized_Tool.ToggleButton();
             this.TilesPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.GridPanel.SuspendLayout();
+            this.RootsPanel.SuspendLayout();
+            this.DirectionPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DirtInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RootsInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RockInput)).BeginInit();
             this.SuspendLayout();
             // 
             // Reset
@@ -75,7 +78,6 @@ namespace LakiaroCalculator
             this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = true;
             this.Reset.UseWaitCursor = true;
-            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
             // Calculate
             // 
@@ -86,7 +88,6 @@ namespace LakiaroCalculator
             this.Calculate.Text = "Calculate";
             this.Calculate.UseVisualStyleBackColor = true;
             this.Calculate.UseWaitCursor = true;
-            this.Calculate.Click += new System.EventHandler(this.Calculate_Click);
             // 
             // TilesPanel
             // 
@@ -94,96 +95,14 @@ namespace LakiaroCalculator
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TilesPanel.AutoScroll = true;
-            this.TilesPanel.Controls.Add(this.button1);
-            this.TilesPanel.Controls.Add(this.button2);
-            this.TilesPanel.Controls.Add(this.button154);
-            this.TilesPanel.Controls.Add(this.button5);
-            this.TilesPanel.Controls.Add(this.button3);
-            this.TilesPanel.Controls.Add(this.button4);
-            this.TilesPanel.Location = new System.Drawing.Point(447, 47);
+            this.TilesPanel.Controls.Add(this.DirtButton);
+            this.TilesPanel.Controls.Add(this.RockButton);
+            this.TilesPanel.Controls.Add(this.QuestionButton);
+            this.TilesPanel.Location = new System.Drawing.Point(78, 685);
             this.TilesPanel.Name = "TilesPanel";
-            this.TilesPanel.Size = new System.Drawing.Size(230, 71);
+            this.TilesPanel.Size = new System.Drawing.Size(198, 66);
             this.TilesPanel.TabIndex = 13;
             this.TilesPanel.UseWaitCursor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Image = global::LakiaroCalculator.Properties.Resources._0;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 64);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Dirt";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.UseWaitCursor = true;
-            this.button1.Click += new System.EventHandler(this.TileButtonClicked);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Image = global::LakiaroCalculator.Properties.Resources._00;
-            this.button2.Location = new System.Drawing.Point(73, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 64);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Rock";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.UseWaitCursor = true;
-            // 
-            // button154
-            // 
-            this.button154.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button154.ForeColor = System.Drawing.SystemColors.Control;
-            this.button154.Image = ((System.Drawing.Image)(resources.GetObject("button154.Image")));
-            this.button154.Location = new System.Drawing.Point(143, 3);
-            this.button154.Name = "button154";
-            this.button154.Size = new System.Drawing.Size(64, 64);
-            this.button154.TabIndex = 20;
-            this.button154.Text = "button154";
-            this.button154.UseVisualStyleBackColor = false;
-            this.button154.UseWaitCursor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Image = global::LakiaroCalculator.Properties.Resources._6;
-            this.button5.Location = new System.Drawing.Point(3, 73);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(64, 64);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.UseWaitCursor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Image = global::LakiaroCalculator.Properties.Resources._1;
-            this.button3.Location = new System.Drawing.Point(73, 73);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(64, 64);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.UseWaitCursor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Image = global::LakiaroCalculator.Properties.Resources._11;
-            this.button4.Location = new System.Drawing.Point(143, 73);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 64);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -217,17 +136,6 @@ namespace LakiaroCalculator
             this.label3.TabIndex = 19;
             this.label3.Text = "Root";
             this.label3.UseWaitCursor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("굴림", 20F);
-            this.label4.Location = new System.Drawing.Point(76, 140);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 27);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Possible Roots: 0";
-            this.label4.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -265,9 +173,354 @@ namespace LakiaroCalculator
             this.label7.Text = "Possible Root";
             this.label7.UseWaitCursor = true;
             // 
+            // GridPanel
+            // 
+            this.GridPanel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.GridPanel.ColumnCount = 16;
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.Controls.Add(this.cell_button1, 0, 0);
+            this.GridPanel.Location = new System.Drawing.Point(397, 51);
+            this.GridPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.GridPanel.Name = "GridPanel";
+            this.GridPanel.RowCount = 16;
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.GridPanel.Size = new System.Drawing.Size(1024, 1024);
+            this.GridPanel.TabIndex = 28;
+            this.GridPanel.UseWaitCursor = true;
+            // 
+            // RootsPanel
+            // 
+            this.RootsPanel.Controls.Add(this.ThickButton);
+            this.RootsPanel.Controls.Add(this.NarrowButton);
+            this.RootsPanel.Controls.Add(this.ThinButton);
+            this.RootsPanel.Location = new System.Drawing.Point(79, 754);
+            this.RootsPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.RootsPanel.Name = "RootsPanel";
+            this.RootsPanel.Size = new System.Drawing.Size(198, 66);
+            this.RootsPanel.TabIndex = 31;
+            this.RootsPanel.UseWaitCursor = true;
+            // 
+            // DirectionPanel
+            // 
+            this.DirectionPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DirectionPanel.BackColor = System.Drawing.Color.Transparent;
+            this.DirectionPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.DirectionPanel.ColumnCount = 3;
+            this.DirectionPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.DirectionPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.DirectionPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.DirectionPanel.Controls.Add(this.WestButton, 0, 1);
+            this.DirectionPanel.Controls.Add(this.EndButton, 1, 1);
+            this.DirectionPanel.Controls.Add(this.NorthButton, 1, 0);
+            this.DirectionPanel.Controls.Add(this.EastButton, 2, 1);
+            this.DirectionPanel.Controls.Add(this.SouthButton, 1, 2);
+            this.DirectionPanel.Location = new System.Drawing.Point(72, 369);
+            this.DirectionPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.DirectionPanel.Name = "DirectionPanel";
+            this.DirectionPanel.RowCount = 3;
+            this.DirectionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.DirectionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.DirectionPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.DirectionPanel.Size = new System.Drawing.Size(192, 192);
+            this.DirectionPanel.TabIndex = 27;
+            this.DirectionPanel.UseWaitCursor = true;
+            // 
+            // DirtInput
+            // 
+            this.DirtInput.Location = new System.Drawing.Point(152, 47);
+            this.DirtInput.Name = "DirtInput";
+            this.DirtInput.Size = new System.Drawing.Size(120, 21);
+            this.DirtInput.TabIndex = 29;
+            this.DirtInput.UseWaitCursor = true;
+            // 
+            // RootsInput
+            // 
+            this.RootsInput.Location = new System.Drawing.Point(152, 75);
+            this.RootsInput.Name = "RootsInput";
+            this.RootsInput.Size = new System.Drawing.Size(120, 21);
+            this.RootsInput.TabIndex = 30;
+            this.RootsInput.UseWaitCursor = true;
+            this.RootsInput.ValueChanged += new System.EventHandler(this.CacluateRoots);
+            // 
+            // RockInput
+            // 
+            this.RockInput.Location = new System.Drawing.Point(152, 104);
+            this.RockInput.Name = "RockInput";
+            this.RockInput.Size = new System.Drawing.Size(120, 21);
+            this.RockInput.TabIndex = 30;
+            this.RockInput.UseWaitCursor = true;
+            // 
+            // PossibleRoots
+            // 
+            this.PossibleRoots.AutoSize = true;
+            this.PossibleRoots.Font = new System.Drawing.Font("굴림", 20F);
+            this.PossibleRoots.Location = new System.Drawing.Point(76, 140);
+            this.PossibleRoots.Name = "PossibleRoots";
+            this.PossibleRoots.Size = new System.Drawing.Size(232, 27);
+            this.PossibleRoots.TabIndex = 20;
+            this.PossibleRoots.Text = "Possible Roots: 0";
+            this.PossibleRoots.UseWaitCursor = true;
+            // 
+            // ThickButton
+            // 
+            this.ThickButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ThickButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ThickButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThickButton.Image = global::LakiaroCalculator.Properties.Resources._1;
+            this.ThickButton.Location = new System.Drawing.Point(1, 1);
+            this.ThickButton.Margin = new System.Windows.Forms.Padding(1);
+            this.ThickButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.ThickButton.Name = "ThickButton";
+            this.ThickButton.RootType = ((short)(1));
+            this.ThickButton.Size = new System.Drawing.Size(64, 64);
+            this.ThickButton.TabIndex = 13;
+            this.ThickButton.Text = "Thick";
+            this.ThickButton.TileType = ((short)(0));
+            this.ThickButton.Type = ((short)(128));
+            this.ThickButton.UseVisualStyleBackColor = false;
+            this.ThickButton.UseWaitCursor = true;
+            this.ThickButton.Click += new System.EventHandler(this.RootButtonClicked);
+            // 
+            // NarrowButton
+            // 
+            this.NarrowButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.NarrowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NarrowButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.NarrowButton.Image = global::LakiaroCalculator.Properties.Resources._1W_4E1;
+            this.NarrowButton.Location = new System.Drawing.Point(67, 1);
+            this.NarrowButton.Margin = new System.Windows.Forms.Padding(1);
+            this.NarrowButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.NarrowButton.Name = "NarrowButton";
+            this.NarrowButton.RootType = ((short)(0));
+            this.NarrowButton.Size = new System.Drawing.Size(64, 64);
+            this.NarrowButton.TabIndex = 15;
+            this.NarrowButton.Text = "Narrow";
+            this.NarrowButton.TileType = ((short)(0));
+            this.NarrowButton.Type = ((short)(64));
+            this.NarrowButton.UseVisualStyleBackColor = false;
+            this.NarrowButton.UseWaitCursor = true;
+            this.NarrowButton.Click += new System.EventHandler(this.RootButtonClicked);
+            // 
+            // ThinButton
+            // 
+            this.ThinButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ThinButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ThinButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.ThinButton.Image = global::LakiaroCalculator.Properties.Resources._11;
+            this.ThinButton.Location = new System.Drawing.Point(133, 1);
+            this.ThinButton.Margin = new System.Windows.Forms.Padding(1);
+            this.ThinButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.ThinButton.Name = "ThinButton";
+            this.ThinButton.RootType = ((short)(0));
+            this.ThinButton.Size = new System.Drawing.Size(64, 64);
+            this.ThinButton.TabIndex = 14;
+            this.ThinButton.Text = "Thin";
+            this.ThinButton.TileType = ((short)(0));
+            this.ThinButton.Type = ((short)(32));
+            this.ThinButton.UseVisualStyleBackColor = false;
+            this.ThinButton.UseWaitCursor = true;
+            this.ThinButton.Click += new System.EventHandler(this.RootButtonClicked);
+            // 
+            // DirtButton
+            // 
+            this.DirtButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.DirtButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.DirtButton.Image = global::LakiaroCalculator.Properties.Resources._0;
+            this.DirtButton.Location = new System.Drawing.Point(1, 1);
+            this.DirtButton.Margin = new System.Windows.Forms.Padding(1);
+            this.DirtButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.DirtButton.Name = "DirtButton";
+            this.DirtButton.RootType = ((short)(0));
+            this.DirtButton.Size = new System.Drawing.Size(64, 64);
+            this.DirtButton.TabIndex = 11;
+            this.DirtButton.Text = "Dirt";
+            this.DirtButton.TileType = ((short)(0));
+            this.DirtButton.Type = ((short)(0));
+            this.DirtButton.UseVisualStyleBackColor = false;
+            this.DirtButton.UseWaitCursor = true;
+            this.DirtButton.Click += new System.EventHandler(this.TileButtonClicked);
+            // 
+            // RockButton
+            // 
+            this.RockButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.RockButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.RockButton.Image = global::LakiaroCalculator.Properties.Resources._00;
+            this.RockButton.Location = new System.Drawing.Point(67, 1);
+            this.RockButton.Margin = new System.Windows.Forms.Padding(1);
+            this.RockButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.RockButton.Name = "RockButton";
+            this.RockButton.RootType = ((short)(0));
+            this.RockButton.Size = new System.Drawing.Size(64, 64);
+            this.RockButton.TabIndex = 12;
+            this.RockButton.Text = "Rock";
+            this.RockButton.TileType = ((short)(0));
+            this.RockButton.Type = ((short)(0));
+            this.RockButton.UseVisualStyleBackColor = false;
+            this.RockButton.UseWaitCursor = true;
+            this.RockButton.Click += new System.EventHandler(this.TileButtonClicked);
+            // 
+            // QuestionButton
+            // 
+            this.QuestionButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.QuestionButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.QuestionButton.Image = ((System.Drawing.Image)(resources.GetObject("QuestionButton.Image")));
+            this.QuestionButton.Location = new System.Drawing.Point(133, 1);
+            this.QuestionButton.Margin = new System.Windows.Forms.Padding(1);
+            this.QuestionButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.QuestionButton.Name = "QuestionButton";
+            this.QuestionButton.RootType = ((short)(0));
+            this.QuestionButton.Size = new System.Drawing.Size(64, 64);
+            this.QuestionButton.TabIndex = 20;
+            this.QuestionButton.Text = "button154";
+            this.QuestionButton.TileType = ((short)(0));
+            this.QuestionButton.Type = ((short)(0));
+            this.QuestionButton.UseVisualStyleBackColor = false;
+            this.QuestionButton.UseWaitCursor = true;
+            this.QuestionButton.Click += new System.EventHandler(this.TileButtonClicked);
+            // 
+            // cell_button1
+            // 
+            this.cell_button1.BackColor = System.Drawing.Color.SkyBlue;
+            this.cell_button1.Location = new System.Drawing.Point(0, 0);
+            this.cell_button1.Margin = new System.Windows.Forms.Padding(0);
+            this.cell_button1.MinimumSize = new System.Drawing.Size(64, 64);
+            this.cell_button1.Name = "cell_button1";
+            this.cell_button1.RootType = ((short)(0));
+            this.cell_button1.Size = new System.Drawing.Size(64, 64);
+            this.cell_button1.TabIndex = 29;
+            this.cell_button1.TileType = ((short)(0));
+            this.cell_button1.Type = ((short)(0));
+            this.cell_button1.UseVisualStyleBackColor = false;
+            this.cell_button1.UseWaitCursor = true;
+            this.cell_button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Cell_Button_Clicked);
+            // 
+            // WestButton
+            // 
+            this.WestButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.WestButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.WestButton.Image = global::LakiaroCalculator.Properties.Resources.WestArrow;
+            this.WestButton.Location = new System.Drawing.Point(1, 66);
+            this.WestButton.Margin = new System.Windows.Forms.Padding(0);
+            this.WestButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.WestButton.Name = "WestButton";
+            this.WestButton.RootType = ((short)(0));
+            this.WestButton.Size = new System.Drawing.Size(64, 64);
+            this.WestButton.TabIndex = 34;
+            this.WestButton.Text = "West";
+            this.WestButton.TileType = ((short)(0));
+            this.WestButton.Type = ((short)(87));
+            this.WestButton.UseVisualStyleBackColor = false;
+            this.WestButton.UseWaitCursor = true;
+            this.WestButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DirectionButtonCliked);
+            // 
+            // EndButton
+            // 
+            this.EndButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.EndButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.EndButton.Location = new System.Drawing.Point(66, 66);
+            this.EndButton.Margin = new System.Windows.Forms.Padding(0);
+            this.EndButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.EndButton.Name = "EndButton";
+            this.EndButton.RootType = ((short)(0));
+            this.EndButton.Size = new System.Drawing.Size(64, 64);
+            this.EndButton.TabIndex = 36;
+            this.EndButton.Text = "End";
+            this.EndButton.TileType = ((short)(0));
+            this.EndButton.Type = ((short)(67));
+            this.EndButton.UseVisualStyleBackColor = false;
+            this.EndButton.UseWaitCursor = true;
+            this.EndButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DirectionButtonCliked);
+            // 
+            // NorthButton
+            // 
+            this.NorthButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.NorthButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NorthButton.Image = global::LakiaroCalculator.Properties.Resources.NorthArrow;
+            this.NorthButton.Location = new System.Drawing.Point(66, 1);
+            this.NorthButton.Margin = new System.Windows.Forms.Padding(0);
+            this.NorthButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.NorthButton.Name = "NorthButton";
+            this.NorthButton.RootType = ((short)(0));
+            this.NorthButton.Size = new System.Drawing.Size(64, 64);
+            this.NorthButton.TabIndex = 35;
+            this.NorthButton.Text = "North";
+            this.NorthButton.TileType = ((short)(0));
+            this.NorthButton.Type = ((short)(78));
+            this.NorthButton.UseVisualStyleBackColor = false;
+            this.NorthButton.UseWaitCursor = true;
+            this.NorthButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DirectionButtonCliked);
+            // 
+            // EastButton
+            // 
+            this.EastButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.EastButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EastButton.Image = global::LakiaroCalculator.Properties.Resources.EastArrow;
+            this.EastButton.Location = new System.Drawing.Point(131, 66);
+            this.EastButton.Margin = new System.Windows.Forms.Padding(0);
+            this.EastButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.EastButton.Name = "EastButton";
+            this.EastButton.RootType = ((short)(0));
+            this.EastButton.Size = new System.Drawing.Size(64, 64);
+            this.EastButton.TabIndex = 33;
+            this.EastButton.Text = "East";
+            this.EastButton.TileType = ((short)(0));
+            this.EastButton.Type = ((short)(69));
+            this.EastButton.UseVisualStyleBackColor = false;
+            this.EastButton.UseWaitCursor = true;
+            this.EastButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DirectionButtonCliked);
+            // 
+            // SouthButton
+            // 
+            this.SouthButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.SouthButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SouthButton.Image = global::LakiaroCalculator.Properties.Resources.SouthArrow;
+            this.SouthButton.Location = new System.Drawing.Point(66, 131);
+            this.SouthButton.Margin = new System.Windows.Forms.Padding(0);
+            this.SouthButton.MinimumSize = new System.Drawing.Size(64, 64);
+            this.SouthButton.Name = "SouthButton";
+            this.SouthButton.RootType = ((short)(0));
+            this.SouthButton.Size = new System.Drawing.Size(64, 64);
+            this.SouthButton.TabIndex = 32;
+            this.SouthButton.Text = "South";
+            this.SouthButton.TileType = ((short)(0));
+            this.SouthButton.Type = ((short)(83));
+            this.SouthButton.UseVisualStyleBackColor = false;
+            this.SouthButton.UseWaitCursor = true;
+            this.SouthButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DirectionButtonCliked);
+            // 
             // toggleButton1
             // 
-            this.toggleButton1.Location = new System.Drawing.Point(380, -2);
+            this.toggleButton1.Location = new System.Drawing.Point(79, 583);
             this.toggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
             this.toggleButton1.Name = "toggleButton1";
             this.toggleButton1.OffBackColor = System.Drawing.Color.Gainsboro;
@@ -280,161 +533,6 @@ namespace LakiaroCalculator
             this.toggleButton1.UseVisualStyleBackColor = true;
             this.toggleButton1.UseWaitCursor = true;
             // 
-            // button155
-            // 
-            this.button155.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button155.Image = global::LakiaroCalculator.Properties.Resources.Arrow;
-            this.button155.Location = new System.Drawing.Point(75, 4);
-            this.button155.Name = "button155";
-            this.button155.Size = new System.Drawing.Size(64, 61);
-            this.button155.TabIndex = 0;
-            this.button155.Text = "button155";
-            this.button155.UseVisualStyleBackColor = false;
-            this.button155.UseWaitCursor = true;
-            // 
-            // button156
-            // 
-            this.button156.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button156.Image = global::LakiaroCalculator.Properties.Resources.Arrow1;
-            this.button156.Location = new System.Drawing.Point(146, 72);
-            this.button156.Name = "button156";
-            this.button156.Size = new System.Drawing.Size(64, 61);
-            this.button156.TabIndex = 1;
-            this.button156.Text = "button156";
-            this.button156.UseVisualStyleBackColor = false;
-            this.button156.UseWaitCursor = true;
-            // 
-            // button157
-            // 
-            this.button157.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button157.Image = global::LakiaroCalculator.Properties.Resources.Arrow2;
-            this.button157.Location = new System.Drawing.Point(75, 140);
-            this.button157.Name = "button157";
-            this.button157.Size = new System.Drawing.Size(64, 64);
-            this.button157.TabIndex = 2;
-            this.button157.Text = "button157";
-            this.button157.UseVisualStyleBackColor = false;
-            this.button157.UseWaitCursor = true;
-            // 
-            // button158
-            // 
-            this.button158.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button158.Image = global::LakiaroCalculator.Properties.Resources.Arrow3;
-            this.button158.Location = new System.Drawing.Point(4, 72);
-            this.button158.Name = "button158";
-            this.button158.Size = new System.Drawing.Size(64, 61);
-            this.button158.TabIndex = 3;
-            this.button158.Text = "button158";
-            this.button158.UseVisualStyleBackColor = false;
-            this.button158.UseWaitCursor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.button157, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button155, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button158, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button156, 2, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(79, 367);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(210, 210);
-            this.tableLayoutPanel1.TabIndex = 27;
-            this.tableLayoutPanel1.UseWaitCursor = true;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tableLayoutPanel2.ColumnCount = 16;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.Controls.Add(this.cell_button1, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(380, 51);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 16;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1024, 1024);
-            this.tableLayoutPanel2.TabIndex = 28;
-            this.tableLayoutPanel2.UseWaitCursor = true;
-            // 
-            // cell_button1
-            // 
-            this.cell_button1.Location = new System.Drawing.Point(0, 0);
-            this.cell_button1.Margin = new System.Windows.Forms.Padding(0);
-            this.cell_button1.MinimumSize = new System.Drawing.Size(64, 64);
-            this.cell_button1.Name = "cell_button1";
-            this.cell_button1.Size = new System.Drawing.Size(64, 64);
-            this.cell_button1.TabIndex = 29;
-            this.cell_button1.Text = "cell_button1";
-            this.cell_button1.UseVisualStyleBackColor = true;
-            this.cell_button1.UseWaitCursor = true;
-            this.cell_button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Cell_Button_Clicked);
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(152, 47);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 21);
-            this.numericUpDown1.TabIndex = 29;
-            this.numericUpDown1.UseWaitCursor = true;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(152, 75);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 21);
-            this.numericUpDown2.TabIndex = 30;
-            this.numericUpDown2.UseWaitCursor = true;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(152, 104);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 21);
-            this.numericUpDown3.TabIndex = 30;
-            this.numericUpDown3.UseWaitCursor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -443,16 +541,17 @@ namespace LakiaroCalculator
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1708, 1118);
             this.Controls.Add(this.TilesPanel);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.RootsPanel);
+            this.Controls.Add(this.DirectionPanel);
+            this.Controls.Add(this.RockInput);
+            this.Controls.Add(this.RootsInput);
+            this.Controls.Add(this.DirtInput);
+            this.Controls.Add(this.GridPanel);
             this.Controls.Add(this.toggleButton1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.PossibleRoots);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -465,13 +564,13 @@ namespace LakiaroCalculator
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Lakiaro Solver";
             this.UseWaitCursor = true;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.TilesPanel.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.GridPanel.ResumeLayout(false);
+            this.RootsPanel.ResumeLayout(false);
+            this.DirectionPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DirtInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RootsInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RockInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,31 +585,33 @@ namespace LakiaroCalculator
 
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.Button Calculate;
-        private System.Windows.Forms.Button button1;
+        private Customized_Tool.CellButton DirtButton;
         private System.Windows.Forms.FlowLayoutPanel TilesPanel;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private Customized_Tool.CellButton RockButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label PossibleRoots;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button154;
-        private ToggleButton.ToggleButton toggleButton1;
-        private System.Windows.Forms.Button button155;
-        private System.Windows.Forms.Button button156;
-        private System.Windows.Forms.Button button157;
-        private System.Windows.Forms.Button button158;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private LakiaroCalculator.CellButton cell_button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private Customized_Tool.CellButton QuestionButton;
+        private Customized_Tool.ToggleButton toggleButton1;
+        private System.Windows.Forms.TableLayoutPanel DirectionPanel;
+        private System.Windows.Forms.TableLayoutPanel GridPanel;
+        private Customized_Tool.CellButton cell_button1;
+        private System.Windows.Forms.NumericUpDown DirtInput;
+        private System.Windows.Forms.NumericUpDown RootsInput;
+        private System.Windows.Forms.NumericUpDown RockInput;
+        private System.Windows.Forms.FlowLayoutPanel RootsPanel;
+        private Customized_Tool.CellButton SouthButton;
+        private Customized_Tool.CellButton WestButton;
+        private Customized_Tool.CellButton EndButton;
+        private Customized_Tool.CellButton NorthButton;
+        private Customized_Tool.CellButton EastButton;
+        private Customized_Tool.CellButton ThickButton;
+        private Customized_Tool.CellButton ThinButton;
+        private Customized_Tool.CellButton NarrowButton;
     }
 }
 

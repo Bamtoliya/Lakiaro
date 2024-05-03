@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
 
-namespace LakiaroCalculator.ToggleButton
+namespace LakiaroCalculator.Customized_Tool
 {
     public class ToggleButton : CheckBox
     {

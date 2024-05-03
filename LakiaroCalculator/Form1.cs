@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LakiaroCalculator.Customized_Tool;
 
 
 namespace LakiaroCalculator
@@ -17,49 +18,60 @@ namespace LakiaroCalculator
     {
         public bool mouseIsDown = false;
 
+        //Stack for change Cell Button
         public Stack<CellButton> log = new Stack<CellButton>();
 
         public Form1()
         {
             InitializeComponent();
+
+            //Hide Panels when Initialize
+            RootsPanel.Hide();
+            TilesPanel.Hide();
+            DirectionPanel.Hide();
         }
 
-        private void Reset_Click(object sender, EventArgs e)
+        //Calculate Possible Roots Count
+        private void CacluateRoots(object sender, EventArgs e)
         {
-
-        }
-
-        private void Calculate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cell_Update(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cell_button_Right_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cell_button_Wheel_Clicked(object sender, EventArgs e)
-        {
-
+            int minRoots = ((int)RootsInput.Value)/9;
+            int maxRoots = ((int)RootsInput.Value)/6;
+            
+            PossibleRoots.Text = String.Format("Possible Roots: {0:d} ~ {1:d}", minRoots, maxRoots);
         }
 
         private void Cell_Button_Clicked(object sender, MouseEventArgs e)
         {
-            if (TilesPanel.Visible == false)
+            RootsPanel.Hide();
+            TilesPanel.Hide();
+            DirectionPanel.Hide();
+            
+            switch (e.Button){
+                case MouseButtons.Left:
+                    Cell_Button_LeftClick(sender, e);
+                    break;
+                case MouseButtons.Right:
+                    Cell_Button_RightClick(sender, e);
+                    break;
+                case MouseButtons.Middle:
+                    Cell_Button_MiddleClick(sender, e);
+                    break;
+
+            }
+        }
+
+        //Left Click Function of Cell Button 
+        private void Cell_Button_RightClick(object sender, MouseEventArgs e)
+        {
+            if (RootsPanel.Visible == false)
             {
                 CellButton tempButton = (CellButton)sender;
                 
                 Point Location = new Point((((Button)sender).Parent.Location.X + ((Button)sender).Width + 10), ((Button)sender).Height);
 
-                TilesPanel.BringToFront();
-                TilesPanel.Location = Location;
-                TilesPanel.Show();
+                RootsPanel.BringToFront();
+                RootsPanel.Location = Location;
+                RootsPanel.Show();
 
                 log.Push(tempButton);
             }
@@ -69,19 +81,99 @@ namespace LakiaroCalculator
             }
         }
 
+
+        //Right Click Function of Cell Button 
+        private void Cell_Button_LeftClick(object sender, MouseEventArgs e)
+        {   
+            if (TilesPanel.Visible == false)
+            {
+                CellButton tempButton = (CellButton)sender;
+
+                Point Location = new Point((((Button)sender).Parent.Location.X + ((Button)sender).Width + 10), ((Button)sender).Height);
+
+                TilesPanel.BringToFront();
+                TilesPanel.Location = Location;
+                TilesPanel.Show();
+                log.Push(tempButton);
+            }
+            else
+            {
+                TilesPanel.Hide();
+            }
+        }
+
+
+        //Middle Click Function of Cell Button 
+        private void Cell_Button_MiddleClick(object sender, MouseEventArgs e)
+        {
+            CellButton tempButton = (CellButton)sender;
+            tempButton.Type = ((short)TileType.Question);
+            log.Push(tempButton);
+            log.First().Image = LakiaroCalculator.Properties.Resources.Question_Mark;
+        }
+
         private void TileButtonClicked(object sender, EventArgs e) 
         {
-            Button TileButton = (Button)sender;
+            CellButton TileButton = (CellButton)sender;
             log.First().Image = TileButton.Image;
+            log.First().Direction.Clear();
             log.Clear();
             TilesPanel.Hide();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void RootButtonClicked(object sender, EventArgs e)
         {
-
+            CellButton RootButton = (CellButton)sender;
+            log.First().Image = RootButton.Image;
+            log.First().RootType = RootButton.RootType;
+            DirectionPanel.Location = RootsPanel.Location;
+            RootsPanel.Hide();
+            if (log.First().Direction.Count >= 2) log.First().Direction.Clear();
+            DirectionPanel.Show();
+            DirectionPanel.BringToFront();
         }
 
+
+        private void DirectionButtonCliked(object sender, MouseEventArgs e)
+        {
+            CellButton tempButton = (CellButton)sender;
+            if (log.First().Direction.Count < 2)
+            {
+                Root tempRoot = new Root
+                {
+                    Direction = (char)tempButton.Type
+                };
+
+                log.First().Direction.Add(log.First().Direction.Count, tempRoot);
+            }
+
+            if(log.First().Direction.Count >= 2)
+            {
+                string temp;
+                //log.First().Image = LakiaroCalculator.Properties.Resources.
+                //log.Clear();
+                DirectionPanel.Hide();
+            }
+        }
+
+        private void DirectionCheck(CellButton sender)
+        {
+            switch (log.First().RootType)
+            {
+                case RootType.Thick:
+                    log.First().Image = 
+                    break;
+                case RootType.Narrow:
+
+                    break;
+                case RootType.Thin:
+
+                    break;
+                case RootType.End:
+
+                    break;
+            }
+        }
 
         // Detail fo Later
         /**
