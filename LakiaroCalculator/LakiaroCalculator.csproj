@@ -49,8 +49,32 @@
     <Compile Include="Customized Tool\CellButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Customized Tool\GridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customized Tool\GridControl.Designer.cs">
+      <DependentUpon>GridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customized Tool\RootTypeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customized Tool\RootTypeControl.Designer.cs">
+      <DependentUpon>RootTypeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customized Tool\TileTypeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customized Tool\TileTypeControl.Designer.cs">
+      <DependentUpon>TileTypeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customized Tool\TransparentPanel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customized Tool\DirectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customized Tool\DirectionControl.Designer.cs">
+      <DependentUpon>DirectionControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -63,6 +87,25 @@
     <Compile Include="Customized Tool\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Src\Cell.cs" />
+    <Compile Include="Src\Dig.cs" />
+    <Compile Include="Src\Grid.cs" />
+    <Compile Include="Src\Solver.cs" />
+    <EmbeddedResource Include="Customized Tool\CellButton.resx">
+      <DependentUpon>CellButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customized Tool\DirectionControl.resx">
+      <DependentUpon>DirectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customized Tool\GridControl.resx">
+      <DependentUpon>GridControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customized Tool\RootTypeControl.resx">
+      <DependentUpon>RootTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customized Tool\TileTypeControl.resx">
+      <DependentUpon>TileTypeControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +133,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.md" />
     <None Include="Resources\Image0.png" />
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +267,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1W_4E1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Logic.txt" />
+    <Content Include="Ideas.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

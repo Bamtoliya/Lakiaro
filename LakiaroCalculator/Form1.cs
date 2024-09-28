@@ -24,11 +24,9 @@ namespace LakiaroCalculator
         public Form1()
         {
             InitializeComponent();
-
             //Hide Panels when Initialize
             RootsPanel.Hide();
             TilesPanel.Hide();
-            DirectionPanel.Hide();
         }
 
         //Calculate Possible Roots Count
@@ -40,88 +38,18 @@ namespace LakiaroCalculator
             PossibleRoots.Text = String.Format("Possible Roots: {0:d} ~ {1:d}", minRoots, maxRoots);
         }
 
-        private void Cell_Button_Clicked(object sender, MouseEventArgs e)
-        {
-            RootsPanel.Hide();
-            TilesPanel.Hide();
-            DirectionPanel.Hide();
-            
-            switch (e.Button){
-                case MouseButtons.Left:
-                    Cell_Button_LeftClick(sender, e);
-                    break;
-                case MouseButtons.Right:
-                    Cell_Button_RightClick(sender, e);
-                    break;
-                case MouseButtons.Middle:
-                    Cell_Button_MiddleClick(sender, e);
-                    break;
-
-            }
-        }
-
-        //Left Click Function of Cell Button 
-        private void Cell_Button_RightClick(object sender, MouseEventArgs e)
-        {
-            if (RootsPanel.Visible == false)
-            {
-                CellButton tempButton = (CellButton)sender;
-                
-                Point Location = new Point((((Button)sender).Parent.Location.X + ((Button)sender).Width + 10), ((Button)sender).Height);
-
-                RootsPanel.BringToFront();
-                RootsPanel.Location = Location;
-                RootsPanel.Show();
-
-                log.Push(tempButton);
-            }
-            else
-            {
-                TilesPanel.Hide();
-            }
-        }
-
-
-        //Right Click Function of Cell Button 
-        private void Cell_Button_LeftClick(object sender, MouseEventArgs e)
-        {   
-            if (TilesPanel.Visible == false)
-            {
-                CellButton tempButton = (CellButton)sender;
-
-                Point Location = new Point((((Button)sender).Parent.Location.X + ((Button)sender).Width + 10), ((Button)sender).Height);
-
-                TilesPanel.BringToFront();
-                TilesPanel.Location = Location;
-                TilesPanel.Show();
-                log.Push(tempButton);
-            }
-            else
-            {
-                TilesPanel.Hide();
-            }
-        }
-
-
-        //Middle Click Function of Cell Button 
-        private void Cell_Button_MiddleClick(object sender, MouseEventArgs e)
-        {
-            CellButton tempButton = (CellButton)sender;
-            tempButton.Type = ((short)TileType.Question);
-            log.Push(tempButton);
-            log.First().Image = LakiaroCalculator.Properties.Resources.Question_Mark;
-        }
+        
 
         private void TileButtonClicked(object sender, EventArgs e) 
         {
             CellButton TileButton = (CellButton)sender;
             log.First().Image = TileButton.Image;
-            log.First().Direction.Clear();
+            //log.First().Direction.Clear();
             log.Clear();
             TilesPanel.Hide();
         }
 
-        private void RootButtonClicked(object sender, EventArgs e)
+        /*private void RootButtonClicked(object sender, EventArgs e)
         {
             CellButton RootButton = (CellButton)sender;
             log.First().Image = RootButton.Image;
@@ -131,37 +59,20 @@ namespace LakiaroCalculator
             if (log.First().Direction.Count >= 2) log.First().Direction.Clear();
             DirectionPanel.Show();
             DirectionPanel.BringToFront();
-        }
+        }*/
 
 
         private void DirectionButtonCliked(object sender, MouseEventArgs e)
         {
-            CellButton tempButton = (CellButton)sender;
-            if (log.First().Direction.Count < 2)
-            {
-                Root tempRoot = new Root
-                {
-                    Direction = (char)tempButton.Type
-                };
 
-                log.First().Direction.Add(log.First().Direction.Count, tempRoot);
-            }
-
-            if(log.First().Direction.Count >= 2)
-            {
-                string temp;
-                //log.First().Image = LakiaroCalculator.Properties.Resources.
-                //log.Clear();
-                DirectionPanel.Hide();
-            }
         }
 
-        private void DirectionCheck(CellButton sender)
+        /*private void DirectionCheck(CellButton sender)
         {
             switch (log.First().RootType)
             {
                 case RootType.Thick:
-                    log.First().Image = 
+                    //log.First().Image = 
                     break;
                 case RootType.Narrow:
 
@@ -173,9 +84,14 @@ namespace LakiaroCalculator
 
                     break;
             }
+        }*/
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            gridControl1.ResetGridControl();
         }
 
-        // Detail fo Later
+        // Detail for Later
         /**
         private void Cell_Button_MouseDown(object sender, MouseEventArgs e)
         {

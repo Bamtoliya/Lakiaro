@@ -8,3 +8,8 @@ I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.csproj.
 I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.csproj.CoreCompileInputs.cache
 I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.exe
 I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.pdb
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.Customized_Tool.DirectionControl.resources
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.Customized_Tool.GridControl.resources
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.Customized_Tool.CellButton.resources
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.Customized_Tool.RootTypeControl.resources
+I:\BamtoliyaGithub\Lakiaro\LakiaroCalculator\obj\Debug\LakiaroCalculator.Customized_Tool.TileTypeControl.resources

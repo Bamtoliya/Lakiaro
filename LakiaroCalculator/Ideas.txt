@@ -1,0 +1,18 @@
+﻿Reset Event Handle 
+
+Reset Cell Information of CellList from GridControl's grid
+Reset CellButton BackColor based on Cell Information
+
+
+First Recommendation Formula 
+
+First Corner(Top left)
+Grid Width * (((Grid Height - Flower Height)/2)-1) + (((Grid Height - Flower Height)/2)-1) 39 
+Grid Width * (((Grid Height - Flower Height)/2)) - (((Grid Height - Flower Height)/2)) 44
+Grid Width * (((Grid Height - Flower Height))-1) + (((Grid Height - Flower Height))-1)
+Grid Width * (((Grid Height - Flower Height))) - (((Grid Height - Flower Height) /2))
+
+width * (((height - flowerSize) / 2) - 1) + (((width - flowerSize) / 2) - 1));
+width * (((height - flowerSize) / 2)) - (((width - flowerSize) / 2)));
+width * ((height - flowerSize)) + (((width - flowerSize) / 2) -1));
+width * ((height - flowerSize)) + ((width - flowerSize) / 2));
