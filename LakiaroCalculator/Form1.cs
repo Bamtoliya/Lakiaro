@@ -16,17 +16,12 @@ namespace LakiaroCalculator
     
     public partial class Form1 : Form
     {
-        public bool mouseIsDown = false;
-
         //Stack for change Cell Button
         public Stack<CellButton> log = new Stack<CellButton>();
 
         public Form1()
         {
             InitializeComponent();
-            //Hide Panels when Initialize
-            RootsPanel.Hide();
-            TilesPanel.Hide();
         }
 
         //Calculate Possible Roots Count

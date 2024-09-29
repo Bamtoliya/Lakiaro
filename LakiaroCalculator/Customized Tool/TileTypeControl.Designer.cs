@@ -1,4 +1,6 @@
-﻿namespace LakiaroCalculator.Customized_Tool
+﻿using LakiaroCalculator.Src;
+
+namespace LakiaroCalculator.Customized_Tool
 {
     partial class TileTypeControl
     {
@@ -28,72 +30,89 @@
         /// </summary>
         private void InitializeComponent()
         {
+            LakiaroCalculator.Src.Cell cell1 = new LakiaroCalculator.Src.Cell();
+            LakiaroCalculator.Src.Cell cell2 = new LakiaroCalculator.Src.Cell();
+            LakiaroCalculator.Src.Cell cell3 = new LakiaroCalculator.Src.Cell();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tileButton1 = new LakiaroCalculator.Customized_Tool.TileButton();
+            this.tileButton2 = new LakiaroCalculator.Customized_Tool.TileButton();
+            this.tileButton3 = new LakiaroCalculator.Customized_Tool.TileButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.Controls.Add(this.tileButton1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tileButton2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tileButton3, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(192, 64);
+            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(274, 96);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(192, 64);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(274, 96);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button3
+            // tileButton1
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Image = global::LakiaroCalculator.Properties.Resources.Question_Mark;
-            this.button3.Location = new System.Drawing.Point(131, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(58, 58);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            cell1.RootType = LakiaroCalculator.Src.RootType.None;
+            cell1.TileType = LakiaroCalculator.Src.TileType.Dirt;
+            this.tileButton1.Cell = cell1;
+            this.tileButton1.Image = global::LakiaroCalculator.Properties.Resources._0;
+            this.tileButton1.Location = new System.Drawing.Point(3, 3);
+            this.tileButton1.Name = "tileButton1";
+            this.tileButton1.Size = new System.Drawing.Size(83, 87);
+            this.tileButton1.TabIndex = 3;
+            this.tileButton1.Text = "tileButton1";
+            this.tileButton1.UseVisualStyleBackColor = true;
+            this.tileButton1.Click += new System.EventHandler(this.Button_Click);
             // 
-            // button2
+            // tileButton2
             // 
-            this.button2.Image = global::LakiaroCalculator.Properties.Resources._00;
-            this.button2.Location = new System.Drawing.Point(67, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 58);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            cell2.RootType = LakiaroCalculator.Src.RootType.None;
+            cell2.TileType = LakiaroCalculator.Src.TileType.Rock;
+            this.tileButton2.Cell = cell2;
+            this.tileButton2.Image = global::LakiaroCalculator.Properties.Resources._00;
+            this.tileButton2.Location = new System.Drawing.Point(95, 4);
+            this.tileButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.tileButton2.Name = "tileButton2";
+            this.tileButton2.Size = new System.Drawing.Size(83, 87);
+            this.tileButton2.TabIndex = 1;
+            this.tileButton2.Text = "button2";
+            this.tileButton2.UseVisualStyleBackColor = true;
+            this.tileButton2.Click += new System.EventHandler(this.Button_Click);
             // 
-            // button1
+            // tileButton3
             // 
-            this.button1.Image = global::LakiaroCalculator.Properties.Resources._0;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 58);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.tileButton3.BackColor = System.Drawing.SystemColors.ControlText;
+            cell3.RootType = LakiaroCalculator.Src.RootType.None;
+            cell3.TileType = LakiaroCalculator.Src.TileType.Question;
+            this.tileButton3.Cell = cell3;
+            this.tileButton3.Image = global::LakiaroCalculator.Properties.Resources.Question_Mark;
+            this.tileButton3.Location = new System.Drawing.Point(186, 4);
+            this.tileButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.tileButton3.Name = "tileButton3";
+            this.tileButton3.Size = new System.Drawing.Size(83, 87);
+            this.tileButton3.TabIndex = 2;
+            this.tileButton3.Text = "tileButton3";
+            this.tileButton3.UseVisualStyleBackColor = false;
+            this.tileButton3.Click += new System.EventHandler(this.Button_Click);
             // 
             // TileTypeControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TileTypeControl";
-            this.Size = new System.Drawing.Size(192, 64);
+            this.Size = new System.Drawing.Size(274, 96);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -102,8 +121,8 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private TileButton tileButton1;
+        private TileButton tileButton2;
+        private TileButton tileButton3;
     }
 }

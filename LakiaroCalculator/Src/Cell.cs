@@ -39,10 +39,11 @@ namespace LakiaroCalculator.Src
     }
 
     #endregion
+
     public class Cell
     {
-        TileType tileType;
-        RootType rootType;
+        public TileType tileType;
+        public RootType rootType;
         //Dictionary<int, Root> 
 
         public Cell()
@@ -54,6 +55,7 @@ namespace LakiaroCalculator.Src
         public Cell(TileType _tileType)
         {
             this.tileType = _tileType;
+            this.rootType = RootType.None;
         }
 
         public TileType TileType { get => tileType; set => tileType = value; }

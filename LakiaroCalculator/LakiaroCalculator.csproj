@@ -49,6 +49,9 @@
     <Compile Include="Customized Tool\CellButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Customized Tool\TileButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Customized Tool\GridControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -66,9 +69,6 @@
     </Compile>
     <Compile Include="Customized Tool\TileTypeControl.Designer.cs">
       <DependentUpon>TileTypeControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Customized Tool\TransparentPanel.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Customized Tool\DirectionControl.cs">
       <SubType>UserControl</SubType>

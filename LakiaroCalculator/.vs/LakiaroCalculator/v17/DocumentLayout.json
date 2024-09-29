@@ -3,64 +3,12 @@
   "WorkspaceRootPath": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\customized tool\\cellbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\cellbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\src\\solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:src\\solver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\customized tool\\tiletypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\tiletypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\customized tool\\tiletypecontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\tiletypecontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\customized tool\\tiletypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\tiletypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\customized tool\\roottypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\roottypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\customized tool\\roottypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\roottypecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\customized tool\\gridcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\gridcontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\customized tool\\gridcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:customized tool\\gridcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\src\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:src\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\logic.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:logic.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|i:\\bamtoliyagithub\\lakiaro\\lakiarocalculator\\ideas.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:ideas.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\src\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A08C4A9-C39F-479E-855C-BBC452EEAAE8}|LakiaroCalculator.csproj|solutionrelative:src\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,70 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 259,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RootTypeControl.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\RootTypeControl.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\RootTypeControl.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\RootTypeControl.cs",
-              "RelativeToolTip": "Customized Tool\\RootTypeControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Solver.cs",
+              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Src\\Solver.cs",
+              "RelativeDocumentMoniker": "Src\\Solver.cs",
+              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Src\\Solver.cs",
+              "RelativeToolTip": "Src\\Solver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:24:32.478Z",
+              "WhenOpened": "2024-09-29T13:13:05.879Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RootTypeControl.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\RootTypeControl.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\RootTypeControl.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\RootTypeControl.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Customized Tool\\RootTypeControl.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:24:30.674Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TileTypeControl.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\TileTypeControl.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\TileTypeControl.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\TileTypeControl.cs",
-              "RelativeToolTip": "Customized Tool\\TileTypeControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:06:28.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TileTypeControl.Designer.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\TileTypeControl.Designer.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\TileTypeControl.Designer.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\TileTypeControl.Designer.cs",
-              "RelativeToolTip": "Customized Tool\\TileTypeControl.Designer.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAA0wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:06:19.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TileTypeControl.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\TileTypeControl.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\TileTypeControl.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\TileTypeControl.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Customized Tool\\TileTypeControl.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:06:16.218Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
@@ -144,132 +42,8 @@
               "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Form1.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "Form1.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T18:22:49.428Z",
+              "WhenOpened": "2024-09-29T13:12:50.681Z",
               "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AQIAALUAAAAAAAAAAAArwM0AAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T15:44:49.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GridControl.Designer.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\GridControl.Designer.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\GridControl.Designer.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\GridControl.Designer.cs",
-              "RelativeToolTip": "Customized Tool\\GridControl.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:13:31.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GridControl.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\GridControl.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\GridControl.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\GridControl.cs",
-              "RelativeToolTip": "Customized Tool\\GridControl.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA6wDYAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:13:22.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CellButton.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\CellButton.cs",
-              "RelativeDocumentMoniker": "Customized Tool\\CellButton.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Customized Tool\\CellButton.cs",
-              "RelativeToolTip": "Customized Tool\\CellButton.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAgwD0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T02:55:19.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAIAywFsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:44:34.845Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 141,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Ideas.txt",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Ideas.txt",
-              "RelativeDocumentMoniker": "Ideas.txt",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Ideas.txt",
-              "RelativeToolTip": "Ideas.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-09-28T17:21:38.728Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Logic.txt",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Logic.txt",
-              "RelativeDocumentMoniker": "Logic.txt",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Logic.txt",
-              "RelativeToolTip": "Logic.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-09-28T16:36:26.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Grid.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Src\\Grid.cs",
-              "RelativeDocumentMoniker": "Src\\Grid.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Src\\Grid.cs",
-              "RelativeToolTip": "Src\\Grid.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAUwC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:45:24.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Cell.cs",
-              "DocumentMoniker": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Src\\Cell.cs",
-              "RelativeDocumentMoniker": "Src\\Cell.cs",
-              "ToolTip": "I:\\BamtoliyaGithub\\Lakiaro\\LakiaroCalculator\\Src\\Cell.cs",
-              "RelativeToolTip": "Src\\Cell.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:19:37.969Z",
-              "EditorCaption": ""
             }
           ]
         }

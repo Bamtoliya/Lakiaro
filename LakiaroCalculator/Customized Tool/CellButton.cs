@@ -10,8 +10,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace LakiaroCalculator.Customized_Tool
 {
-
-
     struct Root
     {
         short type;
@@ -56,10 +54,16 @@ namespace LakiaroCalculator.Customized_Tool
         }
         #endregion
 
+        public void cellUpdate()
+        {
+
+        }
+
         #region MouseClick
         // After click call other panel 
         protected override void OnMouseDown(MouseEventArgs mevent)
         {
+            ((GridControl)(Parent.Parent))
             if (this.cell.TileType != Src.TileType.Flower)
             {
                 switch (mevent.Button)
@@ -85,11 +89,25 @@ namespace LakiaroCalculator.Customized_Tool
         }
         private void MouseRightClick(MouseEventArgs mevent)
         {
+            //((GridControl)(Parent.Parent)).
+            //Console.WriteLine(Parent.Parent);
             this.BackColor = Color.Black;
             tmpControl = new TileTypeControl();
+            Point newLocation = new Point(this.Location.X, this.Location.Y + 64);
+            if (this.Location.X >= 640)
+            {
+                newLocation.X = this.Location.X - 128;
+                if (this.Location.Y >= 704)
+                {
+                    newLocation.Y = this.Location.Y - 64;
+                }
+            }
+            else if (this.Location.Y >= 704)
+            {
+                newLocation.Y = this.Location.Y - 64;
+            }
+            tmpControl.Location = newLocation;
             Parent.Parent.Controls.Add(tmpControl);
-            Point location = new Point((this.Parent.Parent.Parent.Location.X + this.Width + 10), this.Height);
-            tmpControl.Location = location;
             tmpControl.BringToFront();
             tmpControl.Show();
         }

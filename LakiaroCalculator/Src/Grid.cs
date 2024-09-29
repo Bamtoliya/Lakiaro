@@ -69,6 +69,14 @@ namespace LakiaroCalculator.Src
             }
         }
 
+        public void gridUpdate()
+        {
+            foreach(Cell cell in cellList)
+            {
+                cell.cellUpdate();
+            }
+        }
+
 
         //First Solve Logic test
         public void FirstRec()

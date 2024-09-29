@@ -15,6 +15,7 @@ namespace LakiaroCalculator.Customized_Tool
     public partial class GridControl : UserControl
     {
         Grid grid;
+        Stack<int> keyLog;
         public GridControl()
         {
             InitializeComponent();
@@ -49,6 +50,8 @@ namespace LakiaroCalculator.Customized_Tool
             this.grid.ResetGrid();
             GridUpdate();
         }
+
+
 
         public void GridUpdate()
         {

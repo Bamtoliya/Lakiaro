@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LakiaroCalculator.Src;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,13 @@ namespace LakiaroCalculator.Customized_Tool
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
-
+            //Console.WriteLine(sender);
+            //Console.WriteLine(Parent);
+            //((GridControl)Parent).
+            ((TileButton)sender).OnClick();
+            this.Hide();
         }
     }
 }
