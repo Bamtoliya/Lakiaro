@@ -15,7 +15,6 @@ namespace LakiaroCalculator.Customized_Tool
     public partial class GridControl : UserControl
     {
         Grid grid;
-        Stack<int> keyLog;
         public GridControl()
         {
             InitializeComponent();
@@ -41,6 +40,30 @@ namespace LakiaroCalculator.Customized_Tool
             }
         }
 
+        public GridControl(Grid _grid)
+        {
+            InitializeComponent();
+            this.tableLayoutPanel1.RowCount = _grid.Height;
+            this.tableLayoutPanel1.ColumnCount = _grid.Width;
+
+            tableLayoutPanel1.RowStyles.Clear();
+            tableLayoutPanel1.ColumnStyles.Clear();
+
+            for (int i = 0; i < this.tableLayoutPanel1.ColumnCount; ++i)
+            {
+                this.tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 64));
+            }
+
+            for (int i = 0; i < this.tableLayoutPanel1.RowCount; ++i)
+            {
+                this.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 64));
+            }
+            foreach (Cell cell in _grid.CellList)
+            {
+                tableLayoutPanel1.Controls.Add(new CellButton(cell));
+            }
+        }
+
         public void ResetGridControl()
         {
             foreach(CellButton cellButton in tableLayoutPanel1.Controls)
@@ -48,16 +71,20 @@ namespace LakiaroCalculator.Customized_Tool
                 cellButton.Clear();
             }
             this.grid.ResetGrid();
-            GridUpdate();
+        }
+
+        public void Test()
+        {
+
         }
 
 
 
-        public void GridUpdate()
+        /*public void GridUpdate()
         {
             foreach(int index in this.grid.RecList){
                 ((CellButton)tableLayoutPanel1.Controls[index]).Recommend();
             }
-        }
+        }*/
     }
 }

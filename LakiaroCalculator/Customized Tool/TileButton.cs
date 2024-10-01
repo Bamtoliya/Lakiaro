@@ -30,8 +30,8 @@ namespace LakiaroCalculator.Customized_Tool
             Console.WriteLine(Parent.Parent);
             Console.WriteLine(Parent.Parent.Parent);
 
-            (GridControl)
-            Console.WriteLine(this.cell.TileType);
+            //(GridControl)
+            //Console.WriteLine(this.cell.TileType);
             return this.cell;
         }
     }

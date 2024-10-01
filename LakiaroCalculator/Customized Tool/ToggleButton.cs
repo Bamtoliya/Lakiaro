@@ -59,7 +59,6 @@ namespace LakiaroCalculator.Customized_Tool
             int toggleSize = this.Height - 5;
             pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             pevent.Graphics.Clear(this.Parent.BackColor);
-
             if (this.Checked)
             {
                 if (solidStyle)

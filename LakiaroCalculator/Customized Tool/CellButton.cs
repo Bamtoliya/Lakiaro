@@ -63,7 +63,6 @@ namespace LakiaroCalculator.Customized_Tool
         // After click call other panel 
         protected override void OnMouseDown(MouseEventArgs mevent)
         {
-            ((GridControl)(Parent.Parent))
             if (this.cell.TileType != Src.TileType.Flower)
             {
                 switch (mevent.Button)
