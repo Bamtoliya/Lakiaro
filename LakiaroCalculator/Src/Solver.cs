@@ -17,9 +17,9 @@ namespace LakiaroCalculator.Src
         bool level;
         const int flowerSize = 4;
 
-        int nDirts, cDirts = 0;
-        int nRoots, cRoots = 0;
-        int nRocks, cRocks = 0;
+        int nDirts = 0, cDirts = 0;
+        int nRoots = 0, cRoots = 0;
+        int nRocks = 0, cRocks = 0;
 
         public int NDirts { get => nDirts; set => nDirts = value; }
         public int CDirts { get => cDirts; set => cDirts = value; }
@@ -28,6 +28,7 @@ namespace LakiaroCalculator.Src
         public int NRocks { get => nRocks; set => nRocks = value; }
         public int CRocks { get => cRocks; set => cRocks = value; }
         public bool Level { get => level; set => level = value; }
+        public Grid Grid { get => grid; set => grid = value; }
         #endregion
 
         #region Constructor
@@ -38,7 +39,7 @@ namespace LakiaroCalculator.Src
 
         public Solver(bool level)
         {
-            grid = new Grid(this.level);
+            grid = new Grid(level);
         }
 
         #endregion
