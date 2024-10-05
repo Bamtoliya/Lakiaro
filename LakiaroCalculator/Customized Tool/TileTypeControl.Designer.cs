@@ -65,7 +65,7 @@ namespace LakiaroCalculator.Customized_Tool
             cell1.RootType = LakiaroCalculator.Src.RootType.None;
             cell1.TileType = LakiaroCalculator.Src.TileType.Dirt;
             this.tileButton1.Cell = cell1;
-            this.tileButton1.Image = global::LakiaroCalculator.Properties.Resources._0;
+            this.tileButton1.Image = global::LakiaroCalculator.Properties.Resources.Dirt;
             this.tileButton1.Location = new System.Drawing.Point(3, 3);
             this.tileButton1.Name = "tileButton1";
             this.tileButton1.Size = new System.Drawing.Size(83, 87);
@@ -79,7 +79,7 @@ namespace LakiaroCalculator.Customized_Tool
             cell2.RootType = LakiaroCalculator.Src.RootType.None;
             cell2.TileType = LakiaroCalculator.Src.TileType.Rock;
             this.tileButton2.Cell = cell2;
-            this.tileButton2.Image = global::LakiaroCalculator.Properties.Resources._00;
+            this.tileButton2.Image = global::LakiaroCalculator.Properties.Resources.Rock;
             this.tileButton2.Location = new System.Drawing.Point(95, 4);
             this.tileButton2.Margin = new System.Windows.Forms.Padding(4);
             this.tileButton2.Name = "tileButton2";
@@ -95,7 +95,7 @@ namespace LakiaroCalculator.Customized_Tool
             cell3.RootType = LakiaroCalculator.Src.RootType.None;
             cell3.TileType = LakiaroCalculator.Src.TileType.Question;
             this.tileButton3.Cell = cell3;
-            this.tileButton3.Image = global::LakiaroCalculator.Properties.Resources.Question_Mark;
+            this.tileButton3.Image = global::LakiaroCalculator.Properties.Resources.Question;
             this.tileButton3.Location = new System.Drawing.Point(186, 4);
             this.tileButton3.Margin = new System.Windows.Forms.Padding(4);
             this.tileButton3.Name = "tileButton3";

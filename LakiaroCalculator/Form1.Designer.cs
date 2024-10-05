@@ -35,7 +35,6 @@ namespace LakiaroCalculator
             this.Reset = new System.Windows.Forms.Button();
             this.Calculate = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.PossibleRoots = new System.Windows.Forms.Label();
             this.toggleButton1 = new LakiaroCalculator.Customized_Tool.ToggleButton();
@@ -46,10 +45,10 @@ namespace LakiaroCalculator
             // 
             // Reset
             // 
-            this.Reset.Location = new System.Drawing.Point(855, 708);
-            this.Reset.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Reset.Location = new System.Drawing.Point(1425, 980);
+            this.Reset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(56, 59);
+            this.Reset.Size = new System.Drawing.Size(93, 82);
             this.Reset.TabIndex = 0;
             this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = true;
@@ -58,10 +57,10 @@ namespace LakiaroCalculator
             // 
             // Calculate
             // 
-            this.Calculate.Location = new System.Drawing.Point(791, 708);
-            this.Calculate.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Calculate.Location = new System.Drawing.Point(1318, 980);
+            this.Calculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Calculate.Name = "Calculate";
-            this.Calculate.Size = new System.Drawing.Size(59, 59);
+            this.Calculate.Size = new System.Drawing.Size(98, 82);
             this.Calculate.TabIndex = 1;
             this.Calculate.Text = "Calculate";
             this.Calculate.UseVisualStyleBackColor = true;
@@ -72,36 +71,21 @@ namespace LakiaroCalculator
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.LightGreen;
             this.label5.Font = new System.Drawing.Font("굴림", 20F);
-            this.label5.Location = new System.Drawing.Point(786, 650);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(1310, 900);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(231, 27);
+            this.label5.Size = new System.Drawing.Size(345, 40);
             this.label5.TabIndex = 22;
             this.label5.Text = "Recommendation";
             this.label5.UseWaitCursor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Red;
-            this.label6.Font = new System.Drawing.Font("굴림", 20F);
-            this.label6.Location = new System.Drawing.Point(337, 370);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 27);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Flower";
-            this.label6.UseWaitCursor = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.SkyBlue;
             this.label7.Font = new System.Drawing.Font("굴림", 20F);
-            this.label7.Location = new System.Drawing.Point(786, 623);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(1310, 863);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(184, 27);
+            this.label7.Size = new System.Drawing.Size(275, 40);
             this.label7.TabIndex = 24;
             this.label7.Text = "Possible Root";
             this.label7.UseWaitCursor = true;
@@ -110,10 +94,9 @@ namespace LakiaroCalculator
             // 
             this.PossibleRoots.AutoSize = true;
             this.PossibleRoots.Font = new System.Drawing.Font("굴림", 20F);
-            this.PossibleRoots.Location = new System.Drawing.Point(786, 679);
-            this.PossibleRoots.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PossibleRoots.Location = new System.Drawing.Point(1310, 940);
             this.PossibleRoots.Name = "PossibleRoots";
-            this.PossibleRoots.Size = new System.Drawing.Size(232, 27);
+            this.PossibleRoots.Size = new System.Drawing.Size(345, 40);
             this.PossibleRoots.TabIndex = 20;
             this.PossibleRoots.Text = "Possible Roots: 0";
             this.PossibleRoots.UseWaitCursor = true;
@@ -123,15 +106,15 @@ namespace LakiaroCalculator
             this.toggleButton1.Checked = true;
             this.toggleButton1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toggleButton1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.solverBindingSource, "Level", true));
-            this.toggleButton1.Location = new System.Drawing.Point(795, 0);
-            this.toggleButton1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.toggleButton1.MinimumSize = new System.Drawing.Size(38, 24);
+            this.toggleButton1.Location = new System.Drawing.Point(1325, 0);
+            this.toggleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.toggleButton1.MinimumSize = new System.Drawing.Size(63, 33);
             this.toggleButton1.Name = "toggleButton1";
             this.toggleButton1.OffBackColor = System.Drawing.Color.Gainsboro;
             this.toggleButton1.OffToggleColor = System.Drawing.Color.Beige;
             this.toggleButton1.OnBackColor = System.Drawing.Color.MediumAquamarine;
             this.toggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.toggleButton1.Size = new System.Drawing.Size(223, 54);
+            this.toggleButton1.Size = new System.Drawing.Size(372, 75);
             this.toggleButton1.TabIndex = 25;
             this.toggleButton1.Text = "toggleButton1";
             this.toggleButton1.UseVisualStyleBackColor = true;
@@ -147,21 +130,20 @@ namespace LakiaroCalculator
             this.gridControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.Margin = new System.Windows.Forms.Padding(0);
-            this.gridControl1.MaximumSize = new System.Drawing.Size(896, 896);
-            this.gridControl1.MinimumSize = new System.Drawing.Size(768, 768);
+            this.gridControl1.MaximumSize = new System.Drawing.Size(1493, 1241);
+            this.gridControl1.MinimumSize = new System.Drawing.Size(1280, 1063);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(768, 768);
+            this.gridControl1.Size = new System.Drawing.Size(1280, 1063);
             this.gridControl1.TabIndex = 32;
             this.gridControl1.UseWaitCursor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1184, 841);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(1973, 1164);
             this.Controls.Add(this.toggleButton1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -170,7 +152,7 @@ namespace LakiaroCalculator
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.gridControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
@@ -194,7 +176,6 @@ namespace LakiaroCalculator
         private System.Windows.Forms.Button Calculate;
         private System.Windows.Forms.Label PossibleRoots;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private Customized_Tool.ToggleButton toggleButton1;
         private GridControl gridControl1;

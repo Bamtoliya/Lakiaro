@@ -14,7 +14,9 @@ namespace LakiaroCalculator.Customized_Tool
 
         public TileButton(TileType tileType)
         {
+            Console.WriteLine(LakiaroCalculator.Properties.Resources.Dirt.Tag);
             this.cell = new Cell(tileType);
+            this.Text = "";
         }
 
         public TileButton()
@@ -23,16 +25,5 @@ namespace LakiaroCalculator.Customized_Tool
         }
 
         public Cell Cell { get => cell; set => cell = value; }
-
-        public Cell OnClick()
-        {
-            Console.WriteLine(Parent);
-            Console.WriteLine(Parent.Parent);
-            Console.WriteLine(Parent.Parent.Parent);
-
-            //(GridControl)
-            //Console.WriteLine(this.cell.TileType);
-            return this.cell;
-        }
     }
 }

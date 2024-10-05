@@ -20,10 +20,12 @@ namespace LakiaroCalculator.Customized_Tool
 
         private void Button_Click(object sender, EventArgs e)
         {
-            //Console.WriteLine(sender);
-            //Console.WriteLine(Parent);
-            //((GridControl)Parent).
-            ((TileButton)sender).OnClick();
+            if(this.Visible == true) this.Hide();
+            ((Form1)FindForm()).Solver.Log.Push(new CellButton(((TileButton)sender).Cell));
+            CellButton cSrc = ((Form1)FindForm()).Solver.Log.Pop();
+            CellButton cDst = ((Form1)FindForm()).Solver.Log.Pop();
+            cDst.Cell = cSrc.Cell;
+            cDst.cellButtonUpdate();
             this.Hide();
         }
     }

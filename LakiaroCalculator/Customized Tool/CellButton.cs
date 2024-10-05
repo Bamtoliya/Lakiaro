@@ -1,8 +1,10 @@
 ﻿using LakiaroCalculator.Src;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,7 +23,8 @@ namespace LakiaroCalculator.Customized_Tool
     {
         #region Declare
         Cell cell;
-        UserControl tmpControl;
+
+        public Cell Cell { get => cell; set => cell = value; }
         #endregion
 
         #region Constructor
@@ -52,11 +55,56 @@ namespace LakiaroCalculator.Customized_Tool
             this.MinimumSize = new Size(64, 64);
             this.Text = "";
         }
+
+        public CellButton(TileType tileType)
+        {
+            this.cell = new Cell(tileType);
+            switch (cell.TileType)
+            {
+                case Src.TileType.Flower:
+                    this.BackColor = Color.Red;
+                    break;
+                case Src.TileType.Recommend:
+                    this.BackColor = Color.LightGreen;
+                    break;
+                default:
+                    this.BackColor = Color.SkyBlue;
+                    break;
+            }
+            this.Margin = new Padding(0);
+            this.MinimumSize = new Size(64, 64);
+            this.Text = "";
+        }
         #endregion
 
-        public void cellUpdate()
+        public void cellButtonUpdate()
         {
-
+            switch (this.cell.TileType)
+            {
+                case TileType.Dirt:
+                    this.BackColor = Color.Orange;
+                    this.BackgroundImage = LakiaroCalculator.Properties.Resources.Dirt;
+                    break;
+                case TileType.Recommend:
+                    this.BackColor = Color.LightGreen;
+                    break;
+                case TileType.Question:
+                    this.Image = LakiaroCalculator.Properties.Resources.Question;
+                    break;
+                case TileType.Rock:
+                    this.Image = LakiaroCalculator.Properties.Resources.Rock;
+                    break;
+                case TileType.Root:
+                    this.BackColor = Color.Brown;
+                    break;
+                default:
+                    this.Image = null;
+                    this.BackColor = Color.LightSkyBlue;
+                    break;
+            }
+            this.Update();
+            /*this.cell.tileType
+            this.Image = LakiaroCalculator.Properties.Resources._9.ToString();*/
         }
 
         #region MouseClick
@@ -88,10 +136,16 @@ namespace LakiaroCalculator.Customized_Tool
         }
         private void MouseRightClick(MouseEventArgs mevent)
         {
-            //((GridControl)(Parent.Parent)).
-            //Console.WriteLine(Parent.Parent);
+            Form1 fTmp = (Form1)FindForm();
+            //Console.WriteLine(this.Parent);
+            ((Form1)FindForm()).Solver.Log.Push(this);
             this.BackColor = Color.Black;
-            tmpControl = new TileTypeControl();
+            if(fTmp.TmpControl != null)
+            {
+                fTmp.Controls.Remove(fTmp.TmpControl);
+                fTmp.TmpControl.Dispose();
+            }
+            fTmp.TmpControl = new TileTypeControl();
             Point newLocation = new Point(this.Location.X, this.Location.Y + 64);
             if (this.Location.X >= 640)
             {
@@ -105,39 +159,21 @@ namespace LakiaroCalculator.Customized_Tool
             {
                 newLocation.Y = this.Location.Y - 64;
             }
-            tmpControl.Location = newLocation;
-            Parent.Parent.Controls.Add(tmpControl);
-            tmpControl.BringToFront();
-            tmpControl.Show();
+            fTmp.TmpControl.Location = newLocation;
+
+            fTmp.Controls.Add(fTmp.TmpControl);
+            fTmp.TmpControl.BringToFront();
+            fTmp.TmpControl.Show();
         }
         private void MouseMiddleClick()
         {
-            this.Image = LakiaroCalculator.Properties.Resources.Question_Mark;
+            this.Image = LakiaroCalculator.Properties.Resources.Question;
             this.BackColor = Color.SkyBlue;
             this.cell.TileType = Src.TileType.Question;
             this.cell.RootType = Src.RootType.None;
         }
 
-        /*private void Cell_Button_Clicked(object sender, MouseEventArgs e)
-        {
-            RootsPanel.Hide();
-            TilesPanel.Hide();
-
-            switch (e.Button)
-            {
-                case MouseButtons.Left:
-                    Cell_Button_LeftClick(sender, e);
-                    break;
-                case MouseButtons.Right:
-                    Cell_Button_RightClick(sender, e);
-                    break;
-                case MouseButtons.Middle:
-                    Cell_Button_MiddleClick(sender, e);
-                    break;
-
-            }
-        }
-
+        /*
         //Left Click Function of Cell Button 
         private void Cell_Button_RightClick(object sender, MouseEventArgs e)
         {

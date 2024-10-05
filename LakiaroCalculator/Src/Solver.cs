@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LakiaroCalculator.Customized_Tool;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
@@ -11,11 +12,12 @@ namespace LakiaroCalculator.Src
     public class Solver
     {
         #region Variables
-        Grid grid;
+        GridControl grid;
         List<TableLayoutPanelCellPosition> recIndexs = new List<TableLayoutPanelCellPosition>();
         List<int> possibleRoots = new List<int>();
         bool level;
         const int flowerSize = 4;
+        Stack<CellButton> log;
 
         int nDirts = 0, cDirts = 0;
         int nRoots = 0, cRoots = 0;
@@ -28,18 +30,20 @@ namespace LakiaroCalculator.Src
         public int NRocks { get => nRocks; set => nRocks = value; }
         public int CRocks { get => cRocks; set => cRocks = value; }
         public bool Level { get => level; set => level = value; }
-        public Grid Grid { get => grid; set => grid = value; }
+        public Stack<CellButton> Log { get => log; set => log = value; }
         #endregion
 
         #region Constructor
         public Solver()
         {
-            grid = new Grid();
+            grid = new GridControl();
+            log = new Stack<CellButton>();
         }
 
         public Solver(bool level)
         {
-            grid = new Grid(level);
+            grid = new GridControl(level);
+            log = new Stack<CellButton>();
         }
 
         #endregion
@@ -104,7 +108,7 @@ namespace LakiaroCalculator.Src
         {
             foreach(TableLayoutPanelCellPosition index in recIndexs)
             {
-                this.grid.CellList[index.Row, index.Column].TileType = TileType.Recommend;
+                //this.grid.CellList[index.Row, index.Column].TileType = TileType.Recommend;
             }
         }
 

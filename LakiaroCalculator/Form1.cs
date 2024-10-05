@@ -19,6 +19,7 @@ namespace LakiaroCalculator
     {
         Solver solver;
         bool level;
+        Control tmpControl;
 
         public Form1()
         {
@@ -28,6 +29,9 @@ namespace LakiaroCalculator
             if (level) gridControl1.Size = gridControl1.MaximumSize;
             else gridControl1.Size = gridControl1.MinimumSize;
         }
+
+        public Solver Solver { get => solver; set => solver = value; }
+        public Control TmpControl { get => tmpControl; set => tmpControl = value; }
 
         private void Reset_Click(object sender, EventArgs e)
         {
@@ -39,6 +43,8 @@ namespace LakiaroCalculator
             level = toggleButton1.Checked;
             solver = new Solver(level);
         }
+
+
 
         // Detail for Later
         /**

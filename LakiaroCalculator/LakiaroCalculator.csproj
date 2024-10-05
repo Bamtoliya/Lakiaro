@@ -87,9 +87,15 @@
     <Compile Include="Customized Tool\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Src\Cell.cs" />
     <Compile Include="Src\Dig.cs" />
-    <Compile Include="Src\Grid.cs" />
+    <None Include="Src\Grid.cs" />
+    <Compile Include="Src\Helper.cs" />
     <Compile Include="Src\Solver.cs" />
     <EmbeddedResource Include="Customized Tool\CellButton.resx">
       <DependentUpon>CellButton.cs</DependentUpon>
@@ -119,11 +125,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
