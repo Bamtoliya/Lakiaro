@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,23 +27,40 @@ namespace LakiaroCalculator
             InitializeComponent();
             level = toggleButton1.Checked;
             solver = new Solver(level);
+            solver.GridControl = this.gridControl1;
             if (level) gridControl1.Size = gridControl1.MaximumSize;
             else gridControl1.Size = gridControl1.MinimumSize;
+            //this.Scale(100%);
         }
+        
+        
 
         public Solver Solver { get => solver; set => solver = value; }
         public Control TmpControl { get => tmpControl; set => tmpControl = value; }
+
+        private void Calculate_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Calculate_Button Clicked");
+            solver.Solve(level);
+            this.Update();
+        }
 
         private void Reset_Click(object sender, EventArgs e)
         {
             solver.ResetGrid();
         }
 
-        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        private void ToggleButton1_CheckedChanged(object sender, EventArgs e)
         {
             level = toggleButton1.Checked;
             solver = new Solver(level);
         }
+
+        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

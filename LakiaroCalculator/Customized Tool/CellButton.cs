@@ -77,34 +77,41 @@ namespace LakiaroCalculator.Customized_Tool
         }
         #endregion
 
-        public void cellButtonUpdate()
+        public void CellButtonUpdate()
         {
             switch (this.cell.TileType)
             {
                 case TileType.Dirt:
-                    this.BackColor = Color.Orange;
-                    this.BackgroundImage = LakiaroCalculator.Properties.Resources.Dirt;
+                    this.BackColor = Color.Empty;
+                    this.Image = LakiaroCalculator.Properties.Resources.Dirt;   
                     break;
                 case TileType.Recommend:
-                    this.BackColor = Color.LightGreen;
+                    Console.WriteLine(this.BackColor);
+                    this.BackColor = Color.Empty;
+                    this.Text = "REC";
+                    this.BackColor = Color.Purple;
+                    Console.WriteLine(this.BackColor);
+                    //this.ForeColor = Color.Red;
+                    //this.BackgroundImage = LakiaroCalculator.Properties.Resources.Dirt;
+                    //this.BackColor = Color.LightGreen;
                     break;
                 case TileType.Question:
+                    this.BackColor = Color.Empty;
                     this.Image = LakiaroCalculator.Properties.Resources.Question;
                     break;
                 case TileType.Rock:
+                    this.BackColor = Color.Empty;
                     this.Image = LakiaroCalculator.Properties.Resources.Rock;
                     break;
                 case TileType.Root:
+                    this.BackColor = Color.Empty;
                     this.BackColor = Color.Brown;
                     break;
                 default:
                     this.Image = null;
-                    this.BackColor = Color.LightSkyBlue;
+                    this.BackColor = Color.Empty;
                     break;
             }
-            this.Update();
-            /*this.cell.tileType
-            this.Image = LakiaroCalculator.Properties.Resources._9.ToString();*/
         }
 
         #region MouseClick
@@ -143,7 +150,7 @@ namespace LakiaroCalculator.Customized_Tool
             if(fTmp.TmpControl != null)
             {
                 fTmp.Controls.Remove(fTmp.TmpControl);
-                fTmp.TmpControl.Dispose();
+                fTmp.TmpControl.Hide();
             }
             fTmp.TmpControl = new TileTypeControl();
             Point newLocation = new Point(this.Location.X, this.Location.Y + 64);

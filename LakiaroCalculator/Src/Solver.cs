@@ -9,10 +9,12 @@ using System.Windows.Forms;
 
 namespace LakiaroCalculator.Src
 {
+    
     public class Solver
     {
         #region Variables
-        GridControl grid;
+        Form1 form;
+        GridControl gridControl;
         List<TableLayoutPanelCellPosition> recIndexs = new List<TableLayoutPanelCellPosition>();
         List<int> possibleRoots = new List<int>();
         bool level;
@@ -31,18 +33,20 @@ namespace LakiaroCalculator.Src
         public int CRocks { get => cRocks; set => cRocks = value; }
         public bool Level { get => level; set => level = value; }
         public Stack<CellButton> Log { get => log; set => log = value; }
+        public GridControl GridControl { get => gridControl; set => gridControl = value; }
+        public Form1 Form { get => form; set => form = value; }
         #endregion
 
         #region Constructor
         public Solver()
         {
-            grid = new GridControl();
             log = new Stack<CellButton>();
+            level = false;
         }
 
         public Solver(bool level)
         {
-            grid = new GridControl(level);
+            this.level = level;
             log = new Stack<CellButton>();
         }
 
@@ -50,14 +54,16 @@ namespace LakiaroCalculator.Src
 
         public void Solve(bool level)
         {
-            if(level)
+            Console.WriteLine("Solver.Solve(bool) Called");
+            if (level)
             {
-                
+                FirstRec();
+                GridUpdate();
             }
             else
             {
                 FirstRec();
-                gridUpdate();
+                GridUpdate();
             }
         }
         //Calculate Possible Roots Count
@@ -82,7 +88,6 @@ namespace LakiaroCalculator.Src
         {
             if (level)
             {
-
                 /*recIndexs.Add(width * (((height - flowerSize) / 2) - 1) + (((width - flowerSize) / 2) - 1));
                 recIndexs.Add(width * (height - flowerSize) / 2 - (width - flowerSize) / 2);
                 recIndexs.Add(width * (height - flowerSize) + (((width - flowerSize) / 2) - 1));
@@ -100,20 +105,35 @@ namespace LakiaroCalculator.Src
             }
             else
             {
-                recIndexs.Add(new TableLayoutPanelCellPosition(4, 4));
+                recIndexs.Add(new TableLayoutPanelCellPosition(0, 0));
+                recIndexs.Add(new TableLayoutPanelCellPosition(1, 1));
+                recIndexs.Add(new TableLayoutPanelCellPosition(2, 2));
+                recIndexs.Add(new TableLayoutPanelCellPosition(3, 3));
+
             }
         }
 
-        public void gridUpdate()
+        public void GridUpdate()
         {
             foreach(TableLayoutPanelCellPosition index in recIndexs)
             {
-                //this.grid.CellList[index.Row, index.Column].TileType = TileType.Recommend;
+                GridControl.Grid[index.Row, index.Column].Cell.TileType = TileType.Recommend;
+                GridControl.Grid[index.Row, index.Column].CellButtonUpdate();
             }
         }
 
         public void ResetGrid()
         {
+            foreach(CellButton cellButton in GridControl.Grid)
+            {
+                if(cellButton.Cell.TileType != TileType.Flower)
+                {
+                    cellButton.BackColor = System.Drawing.Color.SkyBlue;
+                    cellButton.Cell.TileType = TileType.None;
+                    cellButton.Cell.RootType = RootType.None;
+                    cellButton.Image = null;
+                }
+            }
             Console.WriteLine("ResetGrid Called");
         }
     }

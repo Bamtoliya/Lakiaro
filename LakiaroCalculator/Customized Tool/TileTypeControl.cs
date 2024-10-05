@@ -25,7 +25,7 @@ namespace LakiaroCalculator.Customized_Tool
             CellButton cSrc = ((Form1)FindForm()).Solver.Log.Pop();
             CellButton cDst = ((Form1)FindForm()).Solver.Log.Pop();
             cDst.Cell = cSrc.Cell;
-            cDst.cellButtonUpdate();
+            cDst.CellButtonUpdate();
             this.Hide();
         }
     }

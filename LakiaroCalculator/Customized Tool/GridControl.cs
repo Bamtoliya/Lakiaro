@@ -16,16 +16,20 @@ namespace LakiaroCalculator.Customized_Tool
 {
     public partial class GridControl : UserControl
     {
+        #region Variables
         CellButton[,] grid;
         int width;
         int height;
-        
+
+        public CellButton[,] Grid { get => grid; set => grid = value; }
+        #endregion
+
         public GridControl()
         {
             InitializeComponent();
             this.width = 12;
             this.height = 12;
-            grid = new CellButton[Height, width];
+            grid = new CellButton[this.height, this.width];
             this.tableLayoutPanel1.RowCount = this.width;
             this.tableLayoutPanel1.ColumnCount = this.height;
 
@@ -55,7 +59,7 @@ namespace LakiaroCalculator.Customized_Tool
                 this.height = 14;
             }
 
-            grid = new CellButton[Height, width];
+            grid = new CellButton[this.height, this.width];
             this.tableLayoutPanel1.RowCount = this.width;
             this.tableLayoutPanel1.ColumnCount = this.height;
 
@@ -110,6 +114,27 @@ namespace LakiaroCalculator.Customized_Tool
                 }
             }
         }
+
+        /*private EventHandler onGridChanged;
+
+        
+
+        public event EventHandler GridChanged
+        {
+            add
+            {
+                onGridChanged += value;
+            }
+            remove
+            {
+                onGridChanged -= value;
+            }
+        }
+
+        protected virtual void OnGridChanged(EventArgs e)
+        {
+            onGridChanged?.Invoke(this, e);
+        }*/
 
 
         /*public void GridUpdate()

@@ -45,7 +45,7 @@ namespace LakiaroCalculator
             // 
             // Reset
             // 
-            this.Reset.Location = new System.Drawing.Point(1425, 980);
+            this.Reset.Location = new System.Drawing.Point(903, 222);
             this.Reset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Reset.Name = "Reset";
             this.Reset.Size = new System.Drawing.Size(93, 82);
@@ -57,7 +57,7 @@ namespace LakiaroCalculator
             // 
             // Calculate
             // 
-            this.Calculate.Location = new System.Drawing.Point(1318, 980);
+            this.Calculate.Location = new System.Drawing.Point(796, 222);
             this.Calculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Calculate.Name = "Calculate";
             this.Calculate.Size = new System.Drawing.Size(98, 82);
@@ -65,13 +65,14 @@ namespace LakiaroCalculator
             this.Calculate.Text = "Calculate";
             this.Calculate.UseVisualStyleBackColor = true;
             this.Calculate.UseWaitCursor = true;
+            this.Calculate.Click += new System.EventHandler(this.Calculate_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.LightGreen;
             this.label5.Font = new System.Drawing.Font("굴림", 20F);
-            this.label5.Location = new System.Drawing.Point(1310, 900);
+            this.label5.Location = new System.Drawing.Point(788, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(345, 40);
             this.label5.TabIndex = 22;
@@ -83,7 +84,7 @@ namespace LakiaroCalculator
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.SkyBlue;
             this.label7.Font = new System.Drawing.Font("굴림", 20F);
-            this.label7.Location = new System.Drawing.Point(1310, 863);
+            this.label7.Location = new System.Drawing.Point(788, 105);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(275, 40);
             this.label7.TabIndex = 24;
@@ -94,7 +95,7 @@ namespace LakiaroCalculator
             // 
             this.PossibleRoots.AutoSize = true;
             this.PossibleRoots.Font = new System.Drawing.Font("굴림", 20F);
-            this.PossibleRoots.Location = new System.Drawing.Point(1310, 940);
+            this.PossibleRoots.Location = new System.Drawing.Point(788, 182);
             this.PossibleRoots.Name = "PossibleRoots";
             this.PossibleRoots.Size = new System.Drawing.Size(345, 40);
             this.PossibleRoots.TabIndex = 20;
@@ -103,10 +104,8 @@ namespace LakiaroCalculator
             // 
             // toggleButton1
             // 
-            this.toggleButton1.Checked = true;
-            this.toggleButton1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toggleButton1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.solverBindingSource, "Level", true));
-            this.toggleButton1.Location = new System.Drawing.Point(1325, 0);
+            this.toggleButton1.Location = new System.Drawing.Point(779, 3);
             this.toggleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.toggleButton1.MinimumSize = new System.Drawing.Size(63, 33);
             this.toggleButton1.Name = "toggleButton1";
@@ -119,7 +118,7 @@ namespace LakiaroCalculator
             this.toggleButton1.Text = "toggleButton1";
             this.toggleButton1.UseVisualStyleBackColor = true;
             this.toggleButton1.UseWaitCursor = true;
-            this.toggleButton1.CheckedChanged += new System.EventHandler(this.toggleButton1_CheckedChanged);
+            this.toggleButton1.CheckedChanged += new System.EventHandler(this.ToggleButton1_CheckedChanged);
             // 
             // solverBindingSource
             // 
@@ -130,17 +129,16 @@ namespace LakiaroCalculator
             this.gridControl1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.Margin = new System.Windows.Forms.Padding(0);
-            this.gridControl1.MaximumSize = new System.Drawing.Size(1493, 1241);
-            this.gridControl1.MinimumSize = new System.Drawing.Size(1280, 1063);
+            this.gridControl1.MaximumSize = new System.Drawing.Size(896, 896);
+            this.gridControl1.MinimumSize = new System.Drawing.Size(768, 768);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1280, 1063);
+            this.gridControl1.Size = new System.Drawing.Size(768, 768);
             this.gridControl1.TabIndex = 32;
             this.gridControl1.UseWaitCursor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1973, 1164);
