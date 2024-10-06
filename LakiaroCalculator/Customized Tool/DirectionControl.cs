@@ -16,5 +16,10 @@ namespace LakiaroCalculator.Customized_Tool
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

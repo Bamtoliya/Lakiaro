@@ -42,7 +42,6 @@ namespace LakiaroCalculator
         {
             Console.WriteLine("Calculate_Button Clicked");
             solver.Solve(level);
-            this.Update();
         }
 
         private void Reset_Click(object sender, EventArgs e)
@@ -56,12 +55,14 @@ namespace LakiaroCalculator
             solver = new Solver(level);
         }
 
-        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        protected override void OnMouseDown(MouseEventArgs mevent)
         {
-
+            if(tmpControl != null)
+            {
+                tmpControl.Hide();
+                solver.Log.Clear();
+            }
         }
-
-
 
 
         // Detail for Later

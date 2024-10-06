@@ -85,16 +85,6 @@ namespace LakiaroCalculator.Customized_Tool
                     this.BackColor = Color.Empty;
                     this.Image = LakiaroCalculator.Properties.Resources.Dirt;   
                     break;
-                case TileType.Recommend:
-                    Console.WriteLine(this.BackColor);
-                    this.BackColor = Color.Empty;
-                    this.Text = "REC";
-                    this.BackColor = Color.Purple;
-                    Console.WriteLine(this.BackColor);
-                    //this.ForeColor = Color.Red;
-                    //this.BackgroundImage = LakiaroCalculator.Properties.Resources.Dirt;
-                    //this.BackColor = Color.LightGreen;
-                    break;
                 case TileType.Question:
                     this.BackColor = Color.Empty;
                     this.Image = LakiaroCalculator.Properties.Resources.Question;
@@ -104,8 +94,15 @@ namespace LakiaroCalculator.Customized_Tool
                     this.Image = LakiaroCalculator.Properties.Resources.Rock;
                     break;
                 case TileType.Root:
-                    this.BackColor = Color.Empty;
                     this.BackColor = Color.Brown;
+                    break;
+                case TileType.Recommend:
+                    this.Image = null;
+                    this.BackColor = Color.LightGreen;
+                    break;
+                case TileType.None:
+                    this.Image = null;
+                    this.BackColor = Color.SkyBlue;
                     break;
                 default:
                     this.Image = null;
@@ -139,14 +136,45 @@ namespace LakiaroCalculator.Customized_Tool
 
         private void MouseLeftClick(MouseEventArgs mevent)
         {
-            this.BackColor = Color.Red;
+            Form1 fTmp = (Form1)FindForm();
+            ((Form1)FindForm()).Solver.Log.Clear();
+            ((Form1)FindForm()).Solver.Log.Push(this);
+            this.BackColor = Color.Purple;
+            if (fTmp.TmpControl != null)
+            {
+                fTmp.Controls.Remove(fTmp.TmpControl);
+                fTmp.TmpControl.Hide();
+            }
+            fTmp.TmpControl = new RootTypeControl();
+            Point newLocation = new Point(this.Location.X, this.Location.Y + 64);
+            if (this.Location.X >= 640)
+            {
+                newLocation.X = this.Location.X - 128;
+                if (this.Location.Y >= 704)
+                {
+                    newLocation.Y = this.Location.Y - 64;
+                }
+            }
+            else if (this.Location.Y >= 704)
+            {
+                newLocation.Y = this.Location.Y - 64;
+            }
+            fTmp.TmpControl.Location = newLocation;
+
+            fTmp.Controls.Add(fTmp.TmpControl);
+            fTmp.TmpControl.BringToFront();
+            fTmp.TmpControl.Show();
+            CellButtonUpdate();
         }
         private void MouseRightClick(MouseEventArgs mevent)
         {
             Form1 fTmp = (Form1)FindForm();
-            //Console.WriteLine(this.Parent);
+            if(((Form1)FindForm()).Solver.Log.Count != 0)
+            {
+                ((Form1)FindForm()).Solver.Log.Pop().Cell.TileType = TileType.None;
+            }
+            ((Form1)FindForm()).Solver.Log.Clear();
             ((Form1)FindForm()).Solver.Log.Push(this);
-            this.BackColor = Color.Black;
             if(fTmp.TmpControl != null)
             {
                 fTmp.Controls.Remove(fTmp.TmpControl);
@@ -171,6 +199,7 @@ namespace LakiaroCalculator.Customized_Tool
             fTmp.Controls.Add(fTmp.TmpControl);
             fTmp.TmpControl.BringToFront();
             fTmp.TmpControl.Show();
+            CellButtonUpdate();
         }
         private void MouseMiddleClick()
         {

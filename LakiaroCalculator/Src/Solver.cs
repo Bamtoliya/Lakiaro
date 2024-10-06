@@ -132,6 +132,7 @@ namespace LakiaroCalculator.Src
                     cellButton.Cell.TileType = TileType.None;
                     cellButton.Cell.RootType = RootType.None;
                     cellButton.Image = null;
+                    cellButton.Text = "";
                 }
             }
             Console.WriteLine("ResetGrid Called");

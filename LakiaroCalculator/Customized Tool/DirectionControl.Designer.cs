@@ -40,9 +40,9 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.Controls.Add(this.northButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.eastButton, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.endButton, 1, 1);
@@ -50,80 +50,88 @@
             this.tableLayoutPanel1.Controls.Add(this.southButton, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(192, 192);
+            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(192, 192);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(134, 128);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(192, 192);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // northButton
             // 
             this.northButton.BackColor = System.Drawing.SystemColors.ControlText;
             this.northButton.BackgroundImage = global::LakiaroCalculator.Properties.Resources.NorthArrow;
-            this.northButton.Location = new System.Drawing.Point(45, 0);
+            this.northButton.Location = new System.Drawing.Point(64, 0);
             this.northButton.Margin = new System.Windows.Forms.Padding(0);
             this.northButton.Name = "northButton";
-            this.northButton.Size = new System.Drawing.Size(45, 43);
+            this.northButton.Size = new System.Drawing.Size(64, 64);
             this.northButton.TabIndex = 0;
             this.northButton.Text = "North";
             this.northButton.UseVisualStyleBackColor = false;
+            this.northButton.Click += new System.EventHandler(this.Button_Click);
             // 
             // eastButton
             // 
             this.eastButton.BackColor = System.Drawing.SystemColors.ControlText;
             this.eastButton.BackgroundImage = global::LakiaroCalculator.Properties.Resources.EastArrow;
-            this.eastButton.Location = new System.Drawing.Point(90, 43);
+            this.eastButton.Location = new System.Drawing.Point(128, 64);
             this.eastButton.Margin = new System.Windows.Forms.Padding(0);
             this.eastButton.Name = "eastButton";
-            this.eastButton.Size = new System.Drawing.Size(45, 43);
+            this.eastButton.Size = new System.Drawing.Size(64, 64);
             this.eastButton.TabIndex = 0;
             this.eastButton.Text = "East";
             this.eastButton.UseVisualStyleBackColor = false;
+            this.eastButton.Click += new System.EventHandler(this.Button_Click);
             // 
             // endButton
             // 
-            this.endButton.Location = new System.Drawing.Point(45, 43);
+            this.endButton.Location = new System.Drawing.Point(64, 64);
             this.endButton.Margin = new System.Windows.Forms.Padding(0);
             this.endButton.Name = "endButton";
-            this.endButton.Size = new System.Drawing.Size(45, 43);
+            this.endButton.Size = new System.Drawing.Size(64, 64);
             this.endButton.TabIndex = 0;
             this.endButton.Text = "End";
             this.endButton.UseVisualStyleBackColor = true;
+            this.endButton.Click += new System.EventHandler(this.Button_Click);
             // 
             // westButton
             // 
             this.westButton.BackColor = System.Drawing.SystemColors.ControlText;
             this.westButton.BackgroundImage = global::LakiaroCalculator.Properties.Resources.WestArrow;
-            this.westButton.Location = new System.Drawing.Point(0, 43);
+            this.westButton.Location = new System.Drawing.Point(0, 64);
             this.westButton.Margin = new System.Windows.Forms.Padding(0);
             this.westButton.Name = "westButton";
-            this.westButton.Size = new System.Drawing.Size(45, 43);
+            this.westButton.Size = new System.Drawing.Size(64, 64);
             this.westButton.TabIndex = 0;
             this.westButton.Text = "West";
             this.westButton.UseVisualStyleBackColor = false;
+            this.westButton.Click += new System.EventHandler(this.Button_Click);
             // 
             // southButton
             // 
             this.southButton.BackColor = System.Drawing.SystemColors.ControlText;
             this.southButton.BackgroundImage = global::LakiaroCalculator.Properties.Resources.SouthArrow;
-            this.southButton.Location = new System.Drawing.Point(45, 86);
+            this.southButton.Location = new System.Drawing.Point(64, 128);
             this.southButton.Margin = new System.Windows.Forms.Padding(0);
             this.southButton.Name = "southButton";
-            this.southButton.Size = new System.Drawing.Size(45, 43);
+            this.southButton.Size = new System.Drawing.Size(64, 64);
             this.southButton.TabIndex = 0;
             this.southButton.Text = "South";
             this.southButton.UseVisualStyleBackColor = false;
+            this.southButton.Click += new System.EventHandler(this.Button_Click);
             // 
             // DirectionControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
+            this.MaximumSize = new System.Drawing.Size(192, 192);
+            this.MinimumSize = new System.Drawing.Size(192, 192);
             this.Name = "DirectionControl";
-            this.Size = new System.Drawing.Size(134, 128);
+            this.Size = new System.Drawing.Size(192, 192);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

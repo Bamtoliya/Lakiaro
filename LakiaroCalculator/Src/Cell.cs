@@ -58,6 +58,12 @@ namespace LakiaroCalculator.Src
             this.rootType = RootType.None;
         }
 
+        public Cell(RootType _rootType)
+        {
+            this.tileType = TileType.Root;
+            this.rootType = _rootType;
+        }
+
         public TileType TileType { get => tileType; set => tileType = value; }
         public RootType RootType { get => rootType; set => rootType = value; }
 

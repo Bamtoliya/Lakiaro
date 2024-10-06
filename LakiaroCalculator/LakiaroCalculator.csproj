@@ -49,6 +49,9 @@
     <Compile Include="Customized Tool\CellButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Customized Tool\RootButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Customized Tool\TileButton.cs">
       <SubType>Component</SubType>
     </Compile>

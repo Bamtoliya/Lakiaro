@@ -43,21 +43,20 @@ namespace LakiaroCalculator.Customized_Tool
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.Controls.Add(this.tileButton1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tileButton2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tileButton3, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(274, 96);
+            this.tableLayoutPanel1.MaximumSize = new System.Drawing.Size(192, 64);
+            this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(192, 64);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(274, 96);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(192, 64);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tileButton1
@@ -66,9 +65,12 @@ namespace LakiaroCalculator.Customized_Tool
             cell1.TileType = LakiaroCalculator.Src.TileType.Dirt;
             this.tileButton1.Cell = cell1;
             this.tileButton1.Image = global::LakiaroCalculator.Properties.Resources.Dirt;
-            this.tileButton1.Location = new System.Drawing.Point(3, 3);
+            this.tileButton1.Location = new System.Drawing.Point(0, 0);
+            this.tileButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.tileButton1.MaximumSize = new System.Drawing.Size(64, 64);
+            this.tileButton1.MinimumSize = new System.Drawing.Size(64, 64);
             this.tileButton1.Name = "tileButton1";
-            this.tileButton1.Size = new System.Drawing.Size(83, 87);
+            this.tileButton1.Size = new System.Drawing.Size(64, 64);
             this.tileButton1.TabIndex = 3;
             this.tileButton1.Text = "tileButton1";
             this.tileButton1.UseVisualStyleBackColor = true;
@@ -80,10 +82,12 @@ namespace LakiaroCalculator.Customized_Tool
             cell2.TileType = LakiaroCalculator.Src.TileType.Rock;
             this.tileButton2.Cell = cell2;
             this.tileButton2.Image = global::LakiaroCalculator.Properties.Resources.Rock;
-            this.tileButton2.Location = new System.Drawing.Point(95, 4);
-            this.tileButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.tileButton2.Location = new System.Drawing.Point(64, 0);
+            this.tileButton2.Margin = new System.Windows.Forms.Padding(0);
+            this.tileButton2.MaximumSize = new System.Drawing.Size(64, 64);
+            this.tileButton2.MinimumSize = new System.Drawing.Size(64, 64);
             this.tileButton2.Name = "tileButton2";
-            this.tileButton2.Size = new System.Drawing.Size(83, 87);
+            this.tileButton2.Size = new System.Drawing.Size(64, 64);
             this.tileButton2.TabIndex = 1;
             this.tileButton2.Text = "button2";
             this.tileButton2.UseVisualStyleBackColor = true;
@@ -96,10 +100,12 @@ namespace LakiaroCalculator.Customized_Tool
             cell3.TileType = LakiaroCalculator.Src.TileType.Question;
             this.tileButton3.Cell = cell3;
             this.tileButton3.Image = global::LakiaroCalculator.Properties.Resources.Question;
-            this.tileButton3.Location = new System.Drawing.Point(186, 4);
-            this.tileButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.tileButton3.Location = new System.Drawing.Point(128, 0);
+            this.tileButton3.Margin = new System.Windows.Forms.Padding(0);
+            this.tileButton3.MaximumSize = new System.Drawing.Size(64, 64);
+            this.tileButton3.MinimumSize = new System.Drawing.Size(64, 64);
             this.tileButton3.Name = "tileButton3";
-            this.tileButton3.Size = new System.Drawing.Size(83, 87);
+            this.tileButton3.Size = new System.Drawing.Size(64, 64);
             this.tileButton3.TabIndex = 2;
             this.tileButton3.Text = "tileButton3";
             this.tileButton3.UseVisualStyleBackColor = false;
@@ -107,12 +113,13 @@ namespace LakiaroCalculator.Customized_Tool
             // 
             // TileTypeControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(0);
+            this.MaximumSize = new System.Drawing.Size(192, 64);
+            this.MinimumSize = new System.Drawing.Size(192, 64);
             this.Name = "TileTypeControl";
-            this.Size = new System.Drawing.Size(274, 96);
+            this.Size = new System.Drawing.Size(192, 64);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
