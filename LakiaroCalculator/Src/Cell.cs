@@ -44,24 +44,27 @@ namespace LakiaroCalculator.Src
     {
         public TileType tileType;
         public RootType rootType;
-        //Dictionary<int, Root> 
+        public string direction = "";
 
         public Cell()
         {
             this.tileType = TileType.None;
             this.rootType = RootType.None;
-        }
+            this.direction = "";
+    }
 
         public Cell(TileType _tileType)
         {
             this.tileType = _tileType;
             this.rootType = RootType.None;
+            this.direction = "";
         }
 
         public Cell(RootType _rootType)
         {
             this.tileType = TileType.Root;
             this.rootType = _rootType;
+            this.direction = "";
         }
 
         public TileType TileType { get => tileType; set => tileType = value; }

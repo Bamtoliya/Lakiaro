@@ -16,3 +16,18 @@ width * (((height - flowerSize) / 2) - 1) + (((width - flowerSize) / 2) - 1));
 width * (((height - flowerSize) / 2)) - (((width - flowerSize) / 2)));
 width * ((height - flowerSize)) + (((width - flowerSize) / 2) -1));
 width * ((height - flowerSize)) + ((width - flowerSize) / 2));
+
+
+방향을 어떻게 입력 받을까?
+		type direction
+이진수 : XX XXXX
+
+string type 1XX
+string type 2XX
+string type 3XX
+string type 4XX
+RootType : 4
+1. Thick 
+2. Narrow (Thick->Thin)
+3. Thin
+4. Thin & end
