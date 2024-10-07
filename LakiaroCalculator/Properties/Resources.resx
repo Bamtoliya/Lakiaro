@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="_3and4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="1NW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3and4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="1WE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WestArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Arrow3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="3WE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NorthArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -139,7 +139,7 @@
   <data name="Question" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Question Mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2WE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -151,43 +151,43 @@
   <data name="SouthArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Arrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2WN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="3NW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="4W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1N_1E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="1NE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1N_1E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1N_1S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="1NS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1N_1S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1N_1W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1N_1W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1N_4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2NE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1N_4E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1N_4S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2NS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1N_4S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1N_4W" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2NW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1N_4W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1S_1E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="1SE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1S_1E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1S_1W" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="1SW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1S_1W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1S_4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2SE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1S_4E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1S_4W" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2SW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1S_4W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1W_1E" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -196,28 +196,28 @@
   <data name="1W_4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1W_4E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4N_1E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2EN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4N_1E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4N_1S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2SN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4N_1S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4N_1W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4N_1W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4N_4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="3NE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4N_4E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4N_4S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="3NS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4N_4S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4N_4W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4N_4W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4S_1E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2ES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4S_1E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4S_1W" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2WS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4S_1W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4S_4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -226,19 +226,19 @@
   <data name="4S_4W" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4S_4W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4W_1E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="2EW" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4W_1E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4W_4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="3SE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4W_4E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="4E" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="4N" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="4S" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WC" type="System.Resources.ResXFileRef, System.Windows.Forms">

@@ -63,46 +63,6 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _1 {
-            get {
-                object obj = ResourceManager.GetObject("_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _11 {
-            get {
-                object obj = ResourceManager.GetObject("_11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1N_1E {
-            get {
-                object obj = ResourceManager.GetObject("1N_1E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1N_1S {
-            get {
-                object obj = ResourceManager.GetObject("1N_1S", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap _1N_1W {
             get {
                 object obj = ResourceManager.GetObject("1N_1W", resourceCulture);
@@ -113,9 +73,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _1N_4E {
+        internal static System.Drawing.Bitmap _1NE {
             get {
-                object obj = ResourceManager.GetObject("1N_4E", resourceCulture);
+                object obj = ResourceManager.GetObject("1NE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +83,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _1N_4S {
+        internal static System.Drawing.Bitmap _1NS {
             get {
-                object obj = ResourceManager.GetObject("1N_4S", resourceCulture);
+                object obj = ResourceManager.GetObject("1NS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +93,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _1N_4W {
+        internal static System.Drawing.Bitmap _1NW {
             get {
-                object obj = ResourceManager.GetObject("1N_4W", resourceCulture);
+                object obj = ResourceManager.GetObject("1NW", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +103,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _1S_1E {
+        internal static System.Drawing.Bitmap _1SE {
             get {
-                object obj = ResourceManager.GetObject("1S_1E", resourceCulture);
+                object obj = ResourceManager.GetObject("1SE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,29 +113,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _1S_1W {
+        internal static System.Drawing.Bitmap _1SW {
             get {
-                object obj = ResourceManager.GetObject("1S_1W", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1S_4E {
-            get {
-                object obj = ResourceManager.GetObject("1S_4E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1S_4W {
-            get {
-                object obj = ResourceManager.GetObject("1S_4W", resourceCulture);
+                object obj = ResourceManager.GetObject("1SW", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +153,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _3and4 {
+        internal static System.Drawing.Bitmap _1WE {
             get {
-                object obj = ResourceManager.GetObject("_3and4", resourceCulture);
+                object obj = ResourceManager.GetObject("1WE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +163,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _4N_1E {
+        internal static System.Drawing.Bitmap _2EN {
             get {
-                object obj = ResourceManager.GetObject("4N_1E", resourceCulture);
+                object obj = ResourceManager.GetObject("2EN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +173,179 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _4N_1S {
+        internal static System.Drawing.Bitmap _2ES {
             get {
-                object obj = ResourceManager.GetObject("4N_1S", resourceCulture);
+                object obj = ResourceManager.GetObject("2ES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2EW {
+            get {
+                object obj = ResourceManager.GetObject("2EW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2NE {
+            get {
+                object obj = ResourceManager.GetObject("2NE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2NS {
+            get {
+                object obj = ResourceManager.GetObject("2NS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2NW {
+            get {
+                object obj = ResourceManager.GetObject("2NW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2SE {
+            get {
+                object obj = ResourceManager.GetObject("2SE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2SN {
+            get {
+                object obj = ResourceManager.GetObject("2SN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2SW {
+            get {
+                object obj = ResourceManager.GetObject("2SW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2WE {
+            get {
+                object obj = ResourceManager.GetObject("2WE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2WN {
+            get {
+                object obj = ResourceManager.GetObject("2WN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2WS {
+            get {
+                object obj = ResourceManager.GetObject("2WS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3NE {
+            get {
+                object obj = ResourceManager.GetObject("3NE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3NS {
+            get {
+                object obj = ResourceManager.GetObject("3NS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3NW {
+            get {
+                object obj = ResourceManager.GetObject("3NW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3SE {
+            get {
+                object obj = ResourceManager.GetObject("3SE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3WE {
+            get {
+                object obj = ResourceManager.GetObject("3WE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4E {
+            get {
+                object obj = ResourceManager.GetObject("4E", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4N {
+            get {
+                object obj = ResourceManager.GetObject("4N", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,26 +363,6 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _4N_4E {
-            get {
-                object obj = ResourceManager.GetObject("4N_4E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _4N_4S {
-            get {
-                object obj = ResourceManager.GetObject("4N_4S", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap _4N_4W {
             get {
                 object obj = ResourceManager.GetObject("4N_4W", resourceCulture);
@@ -283,19 +373,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _4S_1E {
+        internal static System.Drawing.Bitmap _4S {
             get {
-                object obj = ResourceManager.GetObject("4S_1E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _4S_1W {
-            get {
-                object obj = ResourceManager.GetObject("4S_1W", resourceCulture);
+                object obj = ResourceManager.GetObject("4S", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,59 +403,9 @@ namespace LakiaroCalculator.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _4W_1E {
+        internal static System.Drawing.Bitmap _4W {
             get {
-                object obj = ResourceManager.GetObject("4W_1E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _4W_4E {
-            get {
-                object obj = ResourceManager.GetObject("4W_4E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _5 {
-            get {
-                object obj = ResourceManager.GetObject("_5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _6 {
-            get {
-                object obj = ResourceManager.GetObject("_6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _7 {
-            get {
-                object obj = ResourceManager.GetObject("_7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _9 {
-            get {
-                object obj = ResourceManager.GetObject("_9", resourceCulture);
+                object obj = ResourceManager.GetObject("4W", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,26 +426,6 @@ namespace LakiaroCalculator.Properties {
         internal static System.Drawing.Bitmap EastArrow {
             get {
                 object obj = ResourceManager.GetObject("EastArrow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap EC {
-            get {
-                object obj = ResourceManager.GetObject("EC", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap NC {
-            get {
-                object obj = ResourceManager.GetObject("NC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -446,16 +456,6 @@ namespace LakiaroCalculator.Properties {
         internal static System.Drawing.Bitmap Rock {
             get {
                 object obj = ResourceManager.GetObject("Rock", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap SC {
-            get {
-                object obj = ResourceManager.GetObject("SC", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

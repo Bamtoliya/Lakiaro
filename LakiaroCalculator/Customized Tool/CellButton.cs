@@ -95,6 +95,7 @@ namespace LakiaroCalculator.Customized_Tool
                     break;
                 case TileType.Root:
                     this.BackColor = Color.Brown;
+                    RootDirectionUpdate();
                     break;
                 case TileType.Recommend:
                     this.Image = null;
@@ -265,6 +266,40 @@ namespace LakiaroCalculator.Customized_Tool
             this.BackColor = Color.LightGreen;
         }
 
+        #endregion
+
+        #region RootDecide
+        private void RootDirectionUpdate()
+        {
+            string strTmp = this.cell.RootType.ToString() + this.cell.direction;
+            switch (this.cell.RootType)
+            {
+                case RootType.Thick:
+                    if (strTmp.Length == 3)
+                        this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
+                    else Console.WriteLine("invalidInput to cell.Direction");
+                    break;
+                case RootType.Narrow:
+                    if (strTmp.Length == 3)
+                        this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
+                    else Console.WriteLine("invalidInput to cell.Direction");
+                    break;
+                case RootType.Thin:
+                    if (strTmp.Length == 3)
+                        this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
+                    else Console.WriteLine("invalidInput to cell.Direction");
+                    break;
+                case RootType.End:
+                    if(strTmp.Length == 2)
+                        this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
+                    else Console.WriteLine("invalidInput to cell.Direction");
+                    break;
+                default:
+                    Console.WriteLine("invalidInput to cell.Direction");
+                    break;
+            }
+
+        }
         #endregion
 
         public void Clear()

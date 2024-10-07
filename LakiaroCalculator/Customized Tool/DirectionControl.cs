@@ -19,7 +19,10 @@ namespace LakiaroCalculator.Customized_Tool
 
         private void Button_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            CellButton cTmp = ((Form1)FindForm()).Solver.Log.First<CellButton>();
+            
+            cTmp.Cell.direction += ((Button)sender).Text[0];
+            if (cTmp.Cell.RootType == Src.RootType.End || cTmp.Cell.direction.Length == 2) this.Hide();
         }
     }
 }

@@ -31,7 +31,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.northButton = new System.Windows.Forms.Button();
             this.eastButton = new System.Windows.Forms.Button();
-            this.endButton = new System.Windows.Forms.Button();
             this.westButton = new System.Windows.Forms.Button();
             this.southButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -45,7 +44,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.Controls.Add(this.northButton, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.eastButton, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.endButton, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.westButton, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.southButton, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -85,17 +83,6 @@
             this.eastButton.Text = "East";
             this.eastButton.UseVisualStyleBackColor = false;
             this.eastButton.Click += new System.EventHandler(this.Button_Click);
-            // 
-            // endButton
-            // 
-            this.endButton.Location = new System.Drawing.Point(64, 64);
-            this.endButton.Margin = new System.Windows.Forms.Padding(0);
-            this.endButton.Name = "endButton";
-            this.endButton.Size = new System.Drawing.Size(64, 64);
-            this.endButton.TabIndex = 0;
-            this.endButton.Text = "End";
-            this.endButton.UseVisualStyleBackColor = true;
-            this.endButton.Click += new System.EventHandler(this.Button_Click);
             // 
             // westButton
             // 
@@ -142,7 +129,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button northButton;
         private System.Windows.Forms.Button eastButton;
-        private System.Windows.Forms.Button endButton;
         private System.Windows.Forms.Button westButton;
         private System.Windows.Forms.Button southButton;
     }

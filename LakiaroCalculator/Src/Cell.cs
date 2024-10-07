@@ -24,20 +24,9 @@ namespace LakiaroCalculator.Src
         None = 0,
         Thick = 1,
         Narrow = 2,
-        Thin = 4,
-        End = 8
+        Thin = 3,
+        End = 4
     }
-
-
-    public enum RootDirection
-    {
-        North = 'N',
-        South = 'S',
-        West = 'W',
-        East = 'E',
-        End = 'C'
-    }
-
     #endregion
 
     public class Cell
