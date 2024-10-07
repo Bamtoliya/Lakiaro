@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            LakiaroCalculator.Src.Cell cell1 = new LakiaroCalculator.Src.Cell();
+            /*LakiaroCalculator.Src.Cell cell1 = new LakiaroCalculator.Src.Cell();
             LakiaroCalculator.Src.Cell cell2 = new LakiaroCalculator.Src.Cell();
             LakiaroCalculator.Src.Cell cell3 = new LakiaroCalculator.Src.Cell();
-            LakiaroCalculator.Src.Cell cell4 = new LakiaroCalculator.Src.Cell();
+            LakiaroCalculator.Src.Cell cell4 = new LakiaroCalculator.Src.Cell();*/
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.rootButton4 = new LakiaroCalculator.Customized_Tool.RootButton();
-            this.rootButton3 = new LakiaroCalculator.Customized_Tool.RootButton();
-            this.rootButton1 = new LakiaroCalculator.Customized_Tool.RootButton();
-            this.rootButton2 = new LakiaroCalculator.Customized_Tool.RootButton();
+            this.rootButton4 = new LakiaroCalculator.Customized_Tool.RootButton(Src.RootType.End);
+            this.rootButton3 = new LakiaroCalculator.Customized_Tool.RootButton(Src.RootType.Thin);
+            this.rootButton2 = new LakiaroCalculator.Customized_Tool.RootButton(Src.RootType.Narrow);
+            this.rootButton1 = new LakiaroCalculator.Customized_Tool.RootButton(Src.RootType.Thick);
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,9 +63,6 @@
             // 
             // rootButton4
             // 
-            cell1.RootType = LakiaroCalculator.Src.RootType.End;
-            cell1.TileType = LakiaroCalculator.Src.TileType.Root;
-            this.rootButton4.Cell = cell1;
             this.rootButton4.Image = global::LakiaroCalculator.Properties.Resources._4W;
             this.rootButton4.Location = new System.Drawing.Point(192, 0);
             this.rootButton4.Margin = new System.Windows.Forms.Padding(0);
@@ -78,9 +75,6 @@
             // 
             // rootButton3
             // 
-            cell2.RootType = LakiaroCalculator.Src.RootType.Thin;
-            cell2.TileType = LakiaroCalculator.Src.TileType.Root;
-            this.rootButton3.Cell = cell2;
             this.rootButton3.Image = global::LakiaroCalculator.Properties.Resources._3SE;
             this.rootButton3.Location = new System.Drawing.Point(128, 0);
             this.rootButton3.Margin = new System.Windows.Forms.Padding(0);
@@ -93,9 +87,6 @@
             // 
             // rootButton1
             // 
-            cell3.RootType = LakiaroCalculator.Src.RootType.Thin;
-            cell3.TileType = LakiaroCalculator.Src.TileType.Root;
-            this.rootButton1.Cell = cell3;
             this.rootButton1.Image = global::LakiaroCalculator.Properties.Resources._1WE;
             this.rootButton1.Location = new System.Drawing.Point(0, 0);
             this.rootButton1.Margin = new System.Windows.Forms.Padding(0);
@@ -108,9 +99,6 @@
             // 
             // rootButton2
             // 
-            cell4.RootType = LakiaroCalculator.Src.RootType.Narrow;
-            cell4.TileType = LakiaroCalculator.Src.TileType.Root;
-            this.rootButton2.Cell = cell4;
             this.rootButton2.Image = global::LakiaroCalculator.Properties.Resources._2WE;
             this.rootButton2.Location = new System.Drawing.Point(64, 0);
             this.rootButton2.Margin = new System.Windows.Forms.Padding(0);
@@ -139,9 +127,9 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         
-        private LakiaroCalculator.Customized_Tool.RootButton rootButton1;
-        private LakiaroCalculator.Customized_Tool.RootButton rootButton2;
-        private LakiaroCalculator.Customized_Tool.RootButton rootButton3;
+        private RootButton rootButton1;
+        private RootButton rootButton2;
+        private RootButton rootButton3;
         private RootButton rootButton4;
     }
 }

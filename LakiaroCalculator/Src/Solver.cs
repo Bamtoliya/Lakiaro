@@ -105,11 +105,22 @@ namespace LakiaroCalculator.Src
             }
             else
             {
-                recIndexs.Add(new TableLayoutPanelCellPosition(0, 0));
-                recIndexs.Add(new TableLayoutPanelCellPosition(1, 1));
-                recIndexs.Add(new TableLayoutPanelCellPosition(2, 2));
                 recIndexs.Add(new TableLayoutPanelCellPosition(3, 3));
+                recIndexs.Add(new TableLayoutPanelCellPosition(8, 3));
+                recIndexs.Add(new TableLayoutPanelCellPosition(8, 8));
+                recIndexs.Add(new TableLayoutPanelCellPosition(3, 8));
 
+                recIndexs.Add(new TableLayoutPanelCellPosition(1, 4));
+                recIndexs.Add(new TableLayoutPanelCellPosition(1, 7));
+
+                recIndexs.Add(new TableLayoutPanelCellPosition(4, 1));
+                recIndexs.Add(new TableLayoutPanelCellPosition(7, 1));
+
+                recIndexs.Add(new TableLayoutPanelCellPosition(10, 4));
+                recIndexs.Add(new TableLayoutPanelCellPosition(10, 7));
+
+                recIndexs.Add(new TableLayoutPanelCellPosition(4, 10));
+                recIndexs.Add(new TableLayoutPanelCellPosition(7, 10));
             }
         }
 
@@ -117,8 +128,11 @@ namespace LakiaroCalculator.Src
         {
             foreach(TableLayoutPanelCellPosition index in recIndexs)
             {
-                GridControl.Grid[index.Row, index.Column].Cell.TileType = TileType.Recommend;
-                GridControl.Grid[index.Row, index.Column].CellButtonUpdate();
+                if (GridControl.Grid[index.Column, index.Row].Cell.TileType != TileType.Flower)
+                {
+                    GridControl.Grid[index.Column, index.Row].Cell.TileType = TileType.Recommend;
+                    GridControl.Grid[index.Column, index.Row].CellButtonUpdate();
+                }
             }
         }
 

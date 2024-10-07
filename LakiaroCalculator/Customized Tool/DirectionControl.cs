@@ -22,7 +22,11 @@ namespace LakiaroCalculator.Customized_Tool
             CellButton cTmp = ((Form1)FindForm()).Solver.Log.First<CellButton>();
             
             cTmp.Cell.direction += ((Button)sender).Text[0];
-            if (cTmp.Cell.RootType == Src.RootType.End || cTmp.Cell.direction.Length == 2) this.Hide();
+            if (cTmp.Cell.RootType == Src.RootType.End || cTmp.Cell.direction.Length == 2)
+            {
+                cTmp.CellButtonUpdate();
+                this.Hide();
+            }
         }
     }
 }

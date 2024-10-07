@@ -94,7 +94,7 @@ namespace LakiaroCalculator.Customized_Tool
                     this.Image = LakiaroCalculator.Properties.Resources.Rock;
                     break;
                 case TileType.Root:
-                    this.BackColor = Color.Brown;
+                    this.BackColor = Color.Orange;
                     RootDirectionUpdate();
                     break;
                 case TileType.Recommend:
@@ -271,7 +271,7 @@ namespace LakiaroCalculator.Customized_Tool
         #region RootDecide
         private void RootDirectionUpdate()
         {
-            string strTmp = this.cell.RootType.ToString() + this.cell.direction;
+            string strTmp = this.cell.RootType.GetHashCode() + this.cell.direction;
             switch (this.cell.RootType)
             {
                 case RootType.Thick:
