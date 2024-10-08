@@ -88,23 +88,11 @@ namespace LakiaroCalculator.Src
         {
             if (level)
             {
-                /*recIndexs.Add(width * (((height - flowerSize) / 2) - 1) + (((width - flowerSize) / 2) - 1));
-                recIndexs.Add(width * (height - flowerSize) / 2 - (width - flowerSize) / 2);
-                recIndexs.Add(width * (height - flowerSize) + (((width - flowerSize) / 2) - 1));
-                recIndexs.Add(width * (height - flowerSize + 1) - (width - flowerSize) / 2);
 
-                //Need to replace with formula?
-                recIndexs.Add(16);
-                recIndexs.Add(19);
-                recIndexs.Add(49);
-                recIndexs.Add(58);
-                recIndexs.Add(85);
-                recIndexs.Add(94);
-                recIndexs.Add(124);
-                recIndexs.Add(127);*/
             }
             else
             {
+                //Need to replace with loop condition
                 recIndexs.Add(new TableLayoutPanelCellPosition(3, 3));
                 recIndexs.Add(new TableLayoutPanelCellPosition(8, 3));
                 recIndexs.Add(new TableLayoutPanelCellPosition(8, 8));
