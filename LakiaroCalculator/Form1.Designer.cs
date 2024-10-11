@@ -74,7 +74,7 @@ namespace LakiaroCalculator
             this.label5.Font = new System.Drawing.Font("굴림", 20F);
             this.label5.Location = new System.Drawing.Point(788, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(345, 40);
+            this.label5.Size = new System.Drawing.Size(231, 27);
             this.label5.TabIndex = 22;
             this.label5.Text = "Recommendation";
             this.label5.UseWaitCursor = true;
@@ -86,7 +86,7 @@ namespace LakiaroCalculator
             this.label7.Font = new System.Drawing.Font("굴림", 20F);
             this.label7.Location = new System.Drawing.Point(788, 105);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(275, 40);
+            this.label7.Size = new System.Drawing.Size(184, 27);
             this.label7.TabIndex = 24;
             this.label7.Text = "Possible Root";
             this.label7.UseWaitCursor = true;
@@ -97,7 +97,7 @@ namespace LakiaroCalculator
             this.PossibleRoots.Font = new System.Drawing.Font("굴림", 20F);
             this.PossibleRoots.Location = new System.Drawing.Point(788, 182);
             this.PossibleRoots.Name = "PossibleRoots";
-            this.PossibleRoots.Size = new System.Drawing.Size(345, 40);
+            this.PossibleRoots.Size = new System.Drawing.Size(232, 27);
             this.PossibleRoots.TabIndex = 20;
             this.PossibleRoots.Text = "Possible Roots: 0";
             this.PossibleRoots.UseWaitCursor = true;
@@ -141,7 +141,7 @@ namespace LakiaroCalculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1973, 1164);
+            this.ClientSize = new System.Drawing.Size(984, 961);
             this.Controls.Add(this.toggleButton1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);

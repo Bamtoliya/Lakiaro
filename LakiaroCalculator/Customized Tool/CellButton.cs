@@ -23,8 +23,20 @@ namespace LakiaroCalculator.Customized_Tool
     {
         #region Declare
         Cell cell;
+        public event System.EventHandler CellChanged;
+        protected virtual void OnCellChanged()
+        {
+            Console.WriteLine("CellChanged ");
+            if (CellChanged != null) CellChanged(this, EventArgs.Empty);
+        }
 
-        public Cell Cell { get => cell; set => cell = value; }
+        public Cell Cell { get => cell; 
+            set
+            {
+                cell = value;
+                OnCellChanged();
+            }
+        }
         #endregion
 
         #region Constructor
@@ -276,7 +288,17 @@ namespace LakiaroCalculator.Customized_Tool
             {
                 case RootType.Thick:
                     if (strTmp.Length == 3)
-                        this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
+                    {
+                        if (LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image != null)
+                        {
+                            this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
+                        } else
+                        {
+                            string reversedDirection = new string(this.cell.direction.Reverse().ToArray());
+                            strTmp = this.cell.RootType.GetHashCode() + reversedDirection;
+                            this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
+                        }
+                    }                                        
                     else Console.WriteLine("invalidInput to cell.Direction");
                     break;
                 case RootType.Narrow:
@@ -298,10 +320,12 @@ namespace LakiaroCalculator.Customized_Tool
                     Console.WriteLine("invalidInput to cell.Direction");
                     break;
             }
-            if(this.cell.direction.Length == 2)
+            if(this.cell.direction.Length > 0 && this.cell.RootType != RootType.None)
             {
-                PredictRootDirection(this.cell.direction[0]);
-                PredictRootDirection(this.cell.direction[1]);
+                for(int i = 0; i < this.cell.direction.Length; ++i)
+                {
+                    PredictRootDirection(this.cell.direction[i]);
+                }
             }
         }
 
@@ -316,23 +340,57 @@ namespace LakiaroCalculator.Customized_Tool
             {
                 case 'N':
                     cTmp = 'S';
-                    if(cPTmp.Column < ((TableLayoutPanel)this.Parent).Height) 
-                        ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column + 1, cPTmp.Row].cell.direction += cTmp;
+                    if(cPTmp.Column < ((TableLayoutPanel)this.Parent).Height)
+                    {
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column + 1, cPTmp.Row];
+                        if (targetCellButton.Cell.TileType != TileType.Flower)
+                        {
+                            targetCellButton.Cell.TileType = TileType.Root;
+                            targetCellButton.Cell.direction += cTmp;
+                            targetCellButton.CellButtonUpdate();
+                        }
+                    }
                     break;
                 case 'S':
                     cTmp = 'N';
                     if (cPTmp.Column > 0)
-                        ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column - 1, cPTmp.Row].cell.direction += cTmp;
+                    {
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column -1, cPTmp.Row];
+                        if (targetCellButton.Cell.TileType != TileType.Flower)
+                        {
+                            targetCellButton.Cell.TileType = TileType.Root;
+                            targetCellButton.Cell.direction += cTmp;
+                            targetCellButton.CellButtonUpdate();
+                        }
+                    }
+                        
                     break;
                 case 'W':
                     cTmp = 'E';
                     if (cPTmp.Row < ((TableLayoutPanel)this.Parent).Width)
-                        ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column, cPTmp.Row + 1].cell.direction += cTmp;
+                    {
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column, cPTmp.Row + 1];
+                        if (targetCellButton.Cell.TileType != TileType.Flower)
+                        {
+                            targetCellButton.Cell.TileType = TileType.Root;
+                            targetCellButton.Cell.direction += cTmp;
+                            targetCellButton.CellButtonUpdate();
+                        }
+                    }
+                        
                     break;
                 case 'E':
                     cTmp = 'W';
                     if (cPTmp.Row > 0)
-                        ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column, cPTmp.Row - 1].cell.direction += cTmp;
+                    {
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column, cPTmp.Row - 1];
+                        if (targetCellButton.Cell.TileType != TileType.Flower)
+                        {
+                            targetCellButton.Cell.TileType = TileType.Root;
+                            targetCellButton.Cell.direction += cTmp;
+                            targetCellButton.CellButtonUpdate();
+                        }
+                    }
                     break;
                 default:
                     Console.WriteLine("Error Catch");
