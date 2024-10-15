@@ -283,16 +283,21 @@ namespace LakiaroCalculator.Customized_Tool
         #region RootDecide
         private void RootDirectionUpdate()
         {
+            Console.Write(" RootDirectionUpdate Called ");
             string strTmp = this.cell.RootType.GetHashCode() + this.cell.direction;
+            Console.Write(this.cell.RootType.GetHashCode() + this.cell.direction + strTmp.Length);
             switch (this.cell.RootType)
             {
                 case RootType.Thick:
+                case RootType.Thin:
                     if (strTmp.Length == 3)
                     {
+                        Console.WriteLine(" Try to update image ");
                         if (LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image != null)
                         {
                             this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
-                        } else
+                        } 
+                        else
                         {
                             string reversedDirection = new string(this.cell.direction.Reverse().ToArray());
                             strTmp = this.cell.RootType.GetHashCode() + reversedDirection;
@@ -306,18 +311,13 @@ namespace LakiaroCalculator.Customized_Tool
                         this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
                     else Console.WriteLine("invalidInput to cell.Direction");
                     break;
-                case RootType.Thin:
-                    if (strTmp.Length == 3)
-                        this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
-                    else Console.WriteLine("invalidInput to cell.Direction");
-                    break;
                 case RootType.End:
                     if(strTmp.Length == 2)
                         this.Image = LakiaroCalculator.Properties.Resources.ResourceManager.GetObject(strTmp) as Image;
                     else Console.WriteLine("invalidInput to cell.Direction");
                     break;
                 default:
-                    Console.WriteLine("invalidInput to cell.Direction");
+                    Console.WriteLine("invalid Input to cell.Direction");
                     break;
             }
             if(this.cell.direction.Length > 0 && this.cell.RootType != RootType.None)
@@ -329,20 +329,24 @@ namespace LakiaroCalculator.Customized_Tool
             }
         }
 
+
+        //Row = Height
+        //Col = Width
         private void PredictRootDirection(char c)
         {
             Console.WriteLine(this.Parent);
 
             TableLayoutPanelCellPosition cPTmp = ((TableLayoutPanel)this.Parent).GetPositionFromControl(this);
-            Console.WriteLine(cPTmp);
+            Console.Write("Current Cell:\t" + cPTmp.Row + " | " + cPTmp.Column);
             char cTmp = ' ';
             switch (c)
             {
                 case 'N':
                     cTmp = 'S';
-                    if(cPTmp.Column < ((TableLayoutPanel)this.Parent).Height)
+                    if(cPTmp.Row > 0 )
                     {
-                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column + 1, cPTmp.Row];
+                        Console.Write(" Target Cell:\t" + (cPTmp.Row - 1) + " | " + cPTmp.Column);
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Row - 1, cPTmp.Column];
                         if (targetCellButton.Cell.TileType != TileType.Flower)
                         {
                             targetCellButton.Cell.TileType = TileType.Root;
@@ -353,9 +357,10 @@ namespace LakiaroCalculator.Customized_Tool
                     break;
                 case 'S':
                     cTmp = 'N';
-                    if (cPTmp.Column > 0)
+                    if (cPTmp.Row < ((TableLayoutPanel)this.Parent).Height)
                     {
-                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column -1, cPTmp.Row];
+                        Console.Write(" Target Cell:\t" + (cPTmp.Row + 1) + " | " + cPTmp.Column);
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Row + 1, cPTmp.Column];
                         if (targetCellButton.Cell.TileType != TileType.Flower)
                         {
                             targetCellButton.Cell.TileType = TileType.Root;
@@ -367,9 +372,10 @@ namespace LakiaroCalculator.Customized_Tool
                     break;
                 case 'W':
                     cTmp = 'E';
-                    if (cPTmp.Row < ((TableLayoutPanel)this.Parent).Width)
+                    if (cPTmp.Column > 0)
                     {
-                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column, cPTmp.Row + 1];
+                        Console.Write(" Target Cell:\t" + cPTmp.Row + " | " + (cPTmp.Column -1));
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Row, cPTmp.Column - 1];
                         if (targetCellButton.Cell.TileType != TileType.Flower)
                         {
                             targetCellButton.Cell.TileType = TileType.Root;
@@ -381,9 +387,10 @@ namespace LakiaroCalculator.Customized_Tool
                     break;
                 case 'E':
                     cTmp = 'W';
-                    if (cPTmp.Row > 0)
+                    if (cPTmp.Column < ((TableLayoutPanel)this.Parent).Width)
                     {
-                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Column, cPTmp.Row - 1];
+                        Console.Write(" Target Cell:\t" + cPTmp.Row + " | " + (cPTmp.Column + 1));
+                        CellButton targetCellButton = ((Form1)TopLevelControl).Solver.GridControl.Grid[cPTmp.Row, cPTmp.Column + 1];
                         if (targetCellButton.Cell.TileType != TileType.Flower)
                         {
                             targetCellButton.Cell.TileType = TileType.Root;
@@ -396,6 +403,17 @@ namespace LakiaroCalculator.Customized_Tool
                     Console.WriteLine("Error Catch");
                     break;
             }
+        }
+
+        //Get the neihbor tile's root type if it 
+        private void PredictRootType(CellButton target)
+        {
+            //Get directions of cell and 
+            //get Root type of each directions
+            //if they are different = narrow
+            //if thery are different and one is thin and end then thin
+            //if they are same Thick or Thin assign the same
+            //if 
         }
         #endregion
 

@@ -40,6 +40,7 @@ namespace LakiaroCalculator
             this.toggleButton1 = new LakiaroCalculator.Customized_Tool.ToggleButton();
             this.solverBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridControl1 = new LakiaroCalculator.Customized_Tool.GridControl();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.solverBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +75,7 @@ namespace LakiaroCalculator
             this.label5.Font = new System.Drawing.Font("굴림", 20F);
             this.label5.Location = new System.Drawing.Point(788, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(231, 27);
+            this.label5.Size = new System.Drawing.Size(345, 40);
             this.label5.TabIndex = 22;
             this.label5.Text = "Recommendation";
             this.label5.UseWaitCursor = true;
@@ -86,7 +87,7 @@ namespace LakiaroCalculator
             this.label7.Font = new System.Drawing.Font("굴림", 20F);
             this.label7.Location = new System.Drawing.Point(788, 105);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(184, 27);
+            this.label7.Size = new System.Drawing.Size(275, 40);
             this.label7.TabIndex = 24;
             this.label7.Text = "Possible Root";
             this.label7.UseWaitCursor = true;
@@ -97,7 +98,7 @@ namespace LakiaroCalculator
             this.PossibleRoots.Font = new System.Drawing.Font("굴림", 20F);
             this.PossibleRoots.Location = new System.Drawing.Point(788, 182);
             this.PossibleRoots.Name = "PossibleRoots";
-            this.PossibleRoots.Size = new System.Drawing.Size(232, 27);
+            this.PossibleRoots.Size = new System.Drawing.Size(345, 40);
             this.PossibleRoots.TabIndex = 20;
             this.PossibleRoots.Text = "Possible Roots: 0";
             this.PossibleRoots.UseWaitCursor = true;
@@ -113,7 +114,7 @@ namespace LakiaroCalculator
             this.toggleButton1.OffToggleColor = System.Drawing.Color.Beige;
             this.toggleButton1.OnBackColor = System.Drawing.Color.MediumAquamarine;
             this.toggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.toggleButton1.Size = new System.Drawing.Size(372, 75);
+            this.toggleButton1.Size = new System.Drawing.Size(202, 75);
             this.toggleButton1.TabIndex = 25;
             this.toggleButton1.Text = "toggleButton1";
             this.toggleButton1.UseVisualStyleBackColor = true;
@@ -136,12 +137,31 @@ namespace LakiaroCalculator
             this.gridControl1.TabIndex = 32;
             this.gridControl1.UseWaitCursor = true;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(795, 321);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.tableLayoutPanel1.TabIndex = 33;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(984, 961);
+            this.ClientSize = new System.Drawing.Size(1172, 961);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.toggleButton1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -178,6 +198,7 @@ namespace LakiaroCalculator
         private Customized_Tool.ToggleButton toggleButton1;
         private GridControl gridControl1;
         private System.Windows.Forms.BindingSource solverBindingSource;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
 
